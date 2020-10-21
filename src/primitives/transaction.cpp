@@ -70,7 +70,11 @@ uint256 CTransaction::ComputeHash() const
 uint256 CTransaction::ComputeWitnessHash() const
 {
     if (!HasWitness()) {
+<<<<<<< HEAD
         return hash;
+=======
+        return GetHash();
+>>>>>>> origin/0.14
     }
     return SerializeHash(*this, SER_GETHASH, 0);
 }

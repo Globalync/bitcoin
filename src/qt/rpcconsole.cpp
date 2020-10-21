@@ -1212,6 +1212,7 @@ void RPCConsole::banSelectedNode(int bantime)
         // Get currently selected peer address
         NodeId id = nodes.at(i).data().toLongLong();
 
+<<<<<<< HEAD
         // Get currently selected peer address
         int detailNodeRow = clientModel->getPeerTableModel()->getRowByNodeId(id);
         if (detailNodeRow < 0) return;
@@ -1222,6 +1223,18 @@ void RPCConsole::banSelectedNode(int bantime)
             m_node.ban(stats->nodeStats.addr, BanReasonManuallyAdded, bantime);
             m_node.disconnect(stats->nodeStats.addr);
         }
+=======
+	// Get currently selected peer address
+	int detailNodeRow = clientModel->getPeerTableModel()->getRowByNodeId(id);
+	if(detailNodeRow < 0)
+	    return;
+
+	// Find possible nodes, ban it and clear the selected node
+	const CNodeCombinedStats *stats = clientModel->getPeerTableModel()->getNodeStats(detailNodeRow);
+	if(stats) {
+	    g_connman->Ban(stats->nodeStats.addr, BanReasonManuallyAdded, bantime);
+	}
+>>>>>>> origin/0.14
     }
     clearSelectedNode();
     clientModel->getBanTableModel()->refresh();

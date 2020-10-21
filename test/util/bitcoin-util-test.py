@@ -159,6 +159,17 @@ def bctest(testDir, testObj, buildenv):
         if want_error not in outs[1]:
             logging.error("Error mismatch:\n" + "Expected: " + want_error + "\nReceived: " + outs[1].rstrip())
             raise Exception
+<<<<<<< HEAD:test/util/bitcoin-util-test.py
+=======
+
+def bctester(testDir, input_basename, buildenv):
+    """ Loads and parses the input file, runs all tests and reports results"""
+    input_filename = testDir + "/" + input_basename
+    raw_data = open(input_filename).read()
+    input_data = json.loads(raw_data)
+
+    failed_testcases = []
+>>>>>>> origin/0.14:src/test/bctest.py
 
 def parse_output(a, fmt):
     """Parse the output according to specified format.

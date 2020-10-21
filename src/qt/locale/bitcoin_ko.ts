@@ -314,6 +314,22 @@
         <translation>헤더 동기화중 (%1%)...</translation>
     </message>
     <message>
+        <source>Click to disable network activity.</source>
+        <translation>네트워크 활동을 중지하려면 클릭.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>네트워크 활동이 정지됨.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>네트워크 활동을 다시 시작하려면 클릭.</translation>
+    </message>
+    <message>
+        <source>Syncing Headers (%1%)...</source>
+        <translation>헤더 동기화중 (%1%)...</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>디스크에서 블록 다시 색인중...</translation>
     </message>
@@ -574,10 +590,13 @@
         <translation>HD 키 생성이 &lt;b&gt;비활성화되었습니다&lt;/b&gt;</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Private key &lt;b&gt;disabled&lt;/b&gt;</source>
         <translation>개인키 &lt;b&gt;비활성화됨&lt;/b&gt;</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Wallet is &lt;b&gt;encrypted&lt;/b&gt; and currently &lt;b&gt;unlocked&lt;/b&gt;</source>
         <translation>지갑이 &lt;b&gt;암호화&lt;/b&gt; 되었고 현재 &lt;b&gt;잠금해제&lt;/b&gt; 되었습니다</translation>
     </message>
@@ -887,8 +906,13 @@
         <translation>최소 %1 GB의 데이터가 이 디렉토리에 저장되며 시간이 지남에 따라 증가할 것입니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Approximately %1 GB of data will be stored in this directory.</source>
         <translation>약 %1 GB의 데이터가 이 디렉토리에 저장됩니다.</translation>
+=======
+        <source>%1 will download and store a copy of the Bitcoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1가 블록체인의 복사본을 다운로드 저장합니다. 적어도 %2GB의 데이터가 이 폴더에 저장되며 시간이 경과할수록 점차 증가합니다. 그리고 지갑 또한 이 폴더에 저장됩니다. </translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>%1 will download and store a copy of the Bitcoin block chain.</source>
@@ -962,8 +986,13 @@
         <translation>숨기기</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Unknown. Syncing Headers (%1, %2%)...</source>
         <translation>알 수 없음. 헤더 동기화 중(%1,%2%)...</translation>
+=======
+        <source>Unknown. Syncing Headers (%1)...</source>
+        <translation>알수없음. 헤더 동기화중 (%1)...</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
 </context>
 <context>
@@ -1343,7 +1372,11 @@
     </message>
     <message>
         <source>Mined balance in watch-only addresses that has not yet matured</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>조회전용 주소의 채굴된 잔액 중 사용가능하지 않은 금액</translation>
+=======
+        <translation>조회전용 주소의 채굴된 잔액 중 숙성되지 않은 것</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Current total balance in watch-only addresses</source>
@@ -1358,12 +1391,98 @@
     </message>
     <message>
         <source>Cannot start bitcoin: click-to-pay handler</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>bitcoin: 핸들러를 시작할 수 없음</translation>
+=======
+        <translation>비트코인을 시작할 수 없습니다: 지급제어기를 클릭하세요</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>URI handling</source>
         <translation>URI 핸들링</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    <message>
+        <source>Payment request fetch URL is invalid: %1</source>
+        <translation>지불 요청의 URL이 올바르지 않습니다: %1</translation>
+    </message>
+    <message>
+        <source>Invalid payment address %1</source>
+        <translation>잘못된 지불 주소입니다 %1</translation>
+    </message>
+    <message>
+        <source>URI cannot be parsed! This can be caused by an invalid Bitcoin address or malformed URI parameters.</source>
+        <translation>URI의 파싱에 문제가 발생했습니다. 잘못된 비트코인 주소나 URI 파라미터 구성에 오류가 존재할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Payment request file handling</source>
+        <translation>지불이 파일 처리를 요청합니다</translation>
+    </message>
+    <message>
+        <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
+        <translation>지불 요청 파일을 읽을 수 없습니다. 이것은 잘못된 지불 요청 파일에 의해 발생하는 오류일 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Payment request rejected</source>
+        <translation>지불 요청이 거부됨</translation>
+    </message>
+    <message>
+        <source>Payment request network doesn't match client network.</source>
+        <translation>지급 요청 네트워크가 클라이언트 네트워크와 일치되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>지불 요청이 만료됨.</translation>
+    </message>
+    <message>
+        <source>Payment request is not initialized.</source>
+        <translation>지불 요청이 초기화 되지 않았습니다.</translation>
+    </message>
+    <message>
+        <source>Unverified payment requests to custom payment scripts are unsupported.</source>
+        <translation>임의로 변경한 결제 스크립트 기반의 지불 요청 양식은 검증되기 전까지는 지원되지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>잘못된 지불 요청.</translation>
+    </message>
+    <message>
+        <source>Requested payment amount of %1 is too small (considered dust).</source>
+        <translation>요청한 금액 %1의 양이 너무 적습니다. (스팸성 거래로 간주)</translation>
+    </message>
+    <message>
+        <source>Refund from %1</source>
+        <translation>%1 으로부터의 환불</translation>
+    </message>
+    <message>
+        <source>Payment request %1 is too large (%2 bytes, allowed %3 bytes).</source>
+        <translation>지불 요청 %1은 너무 큽니다 (%2 바이트, %3 바이트까지 허용됩니다).</translation>
+    </message>
+    <message>
+        <source>Error communicating with %1: %2</source>
+        <translation>%1과 소통하는데 에러: %2</translation>
+    </message>
+    <message>
+        <source>Payment request cannot be parsed!</source>
+        <translation>지불요청을 파싱할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Bad response from server %1</source>
+        <translation>서버로 부터 잘못된 반응 %1</translation>
+    </message>
+    <message>
+        <source>Network request error</source>
+        <translation>네트워크 요청 에러</translation>
+    </message>
+    <message>
+        <source>Payment acknowledged</source>
+        <translation>지불이 승인됨</translation>
+    </message>
+</context>
+<context>
+    <name>PeerTableModel</name>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     <message>
         <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
         <translation>'bitcoin://"은 잘못된 URI입니다. 'bitcoin:'을 사용하십시오.</translation>
@@ -1372,6 +1491,20 @@
         <source>You are using a BIP70 URL which will be unsupported in the future.</source>
         <translation>지금 사용하고 있는 BIP70 URL은 나중에 지원되지 않을 수 있습니다.</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    <message>
+        <source>NodeId</source>
+        <translation>노드 ID</translation>
+    </message>
+    <message>
+        <source>Ping</source>
+        <translation>핑</translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>지불 요청의 URL이 올바르지 않습니다: %1</translation>
@@ -1408,10 +1541,78 @@
         <source>Payment request expired.</source>
         <translation>지불 요청이 만료되었습니다.</translation>
     </message>
+    <message numerus="yes">
+        <source>%n second(s)</source>
+        <translation><numerusform>%n 초</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n minute(s)</source>
+        <translation><numerusform>%n 분</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n hour(s)</source>
+        <translation><numerusform>%n 시간</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n day(s)</source>
+        <translation><numerusform>&amp;n 일</numerusform></translation>
+    </message>
+    <message numerus="yes">
+        <source>%n week(s)</source>
+        <translation><numerusform>%n 주</numerusform></translation>
+    </message>
     <message>
         <source>Payment request is not initialized.</source>
         <translation>지불 요청이 초기화 되지 않았습니다.</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    <message numerus="yes">
+        <source>%n year(s)</source>
+        <translation><numerusform>%n 년</numerusform></translation>
+    </message>
+    <message>
+        <source>%1 didn't yet exit safely...</source>
+        <translation>%1가 아직 안전하게 종료되지 않았습니다...</translation>
+    </message>
+</context>
+<context>
+    <name>QObject::QObject</name>
+    <message>
+        <source>Error: Specified data directory "%1" does not exist.</source>
+        <translation>에러: 지정한 데이터 폴더 "%1"은 존재하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Error: Cannot parse configuration file: %1. Only use key=value syntax.</source>
+        <translation>에러: 설정파일을 파싱할수 없습니다: %1. key=value syntax만 사용가능합니다.</translation>
+    </message>
+    <message>
+        <source>Error: %1</source>
+        <translation>에러: %1</translation>
+    </message>
+</context>
+<context>
+    <name>QRImageWidget</name>
+    <message>
+        <source>&amp;Save Image...</source>
+        <translation>이미지 저장(&amp;S)...</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Image</source>
+        <translation>이미지 복사(&amp;C)</translation>
+    </message>
+    <message>
+        <source>Save QR Code</source>
+        <translation>QR코드 저장</translation>
+    </message>
+    <message>
+        <source>PNG Image (*.png)</source>
+        <translation>PNG 이미지(*.png)</translation>
+    </message>
+</context>
+<context>
+    <name>RPCConsole</name>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     <message>
         <source>Unverified payment requests to custom payment scripts are unsupported.</source>
         <translation>임의로 변경한 결제 스크립트 기반의 지불 요청 양식은 검증되기 전까지는 지원되지 않습니다.</translation>
@@ -1858,11 +2059,19 @@
     </message>
     <message>
         <source>Ban for</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>차단사유:</translation>
     </message>
     <message>
         <source>&amp;Unban</source>
         <translation>노드 차단 취소(&amp;U)</translation>
+=======
+        <translation>추방</translation>
+    </message>
+    <message>
+        <source>&amp;Unban</source>
+        <translation>노드 추방 취소(&amp;U)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Welcome to the %1 RPC console.</source>
@@ -1877,8 +2086,21 @@
         <translation>사용할 수 있는 명령을 둘러보려면 %1 를 입력하십시요.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>For more information on using this console type %1.</source>
         <translation>더 많은 정보를 보기 위해선 콘솔에 %1를 치세요.</translation>
+=======
+        <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.</source>
+        <translation>경고 : 사기꾼이 사용자에게 여기에 명령을 입력하게 하여 지갑 내용을 훔칠수 있다는 사실을 알려드립니다. 명령어를 완전히 이해하지 못한다면 콘솔을 사용하지 마십시오.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled</source>
+        <translation>네트워크 활동이 정지됨.</translation>
+    </message>
+    <message>
+        <source>%1 B</source>
+        <translation>%1 바이트</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramifications of a command.</source>
@@ -2059,8 +2281,17 @@
         <translation>메시지</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Wallet</source>
         <translation>지갑</translation>
+=======
+        <source>Resulting URI too long, try to reduce the text for label / message.</source>
+        <translation>URI 결과가 너무 길음, 라벨/메세지의 글을 줄이도록 하세요.</translation>
+    </message>
+    <message>
+        <source>Error encoding URI into QR Code.</source>
+        <translation>URI를 QR 코드로 인코딩하는 중 오류가 발생했습니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
 </context>
 <context>
@@ -2161,8 +2392,13 @@
         <translation>Fallbackfee를 사용하게 될 경우 보낸 거래가 승인이 완료 될 때까지 몇 시간 혹은 몇 일 (혹은 영원히) 이 걸릴 수 있습니다. 수동으로 수수료를 선택하거나 전체 체인의 유효성이 검증될 때까지 기다리십시오.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Warning: Fee estimation is currently not possible.</source>
         <translation>경고: 지금은 수수료 예측이 불가능합니다.</translation>
+=======
+        <source>If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then "per kilobyte" only pays 250 satoshis in fee, while "total at least" pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>사용자 정의 수수료가 1000사토시로 지정된 경우 거래의 크기가 250바이트 일 경우 1킬로바이트당 250사토시만 지불되지만 "최소 수수료"에선 1000사토시가 지불됩니다. 1킬로바이트가 넘는 거래인 경우 어떠한 경우에든 1킬로바이트 기준으로 지불됩니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>collapse fee-settings</source>
@@ -2177,12 +2413,21 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 참고 : 수수료는 바이트 단위로 계산되므로 거래 크기가 500 바이트 (1kB의 절반)일때에 수수료가 "100 satoshis / kB"이면 궁극적으로 50사토시의 수수료만 발생합니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>per kilobyte</source>
         <translation>킬로바이트 당</translation>
     </message>
     <message>
         <source>Hide</source>
         <translation>숨기기</translation>
+=======
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
+        <translation>블록의 용량보다 거래의 용량이 작은 경우에는 최소한의 수수료만으로도 충분합니다. 그러나 비트코인 네트워크의 처리량보다 더 많은 거래 요구는 영원히 검증이 안 될 수도 있습니다.</translation>
+    </message>
+    <message>
+        <source>(read the tooltip)</source>
+        <translation>(툴팁을 꼭 읽어보세요)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Recommended:</source>
@@ -2195,6 +2440,17 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>(Smart fee not initialized yet. This usually takes a few blocks...)</source>
         <translation>(Smart fee가 아직 초기화 되지 않았습니다. 블록 분석이 완전하게 끝날 때 까지 기다려주십시오...)</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    </message>
+    <message>
+        <source>normal</source>
+        <translation>일반</translation>
+    </message>
+    <message>
+        <source>fast</source>
+        <translation>빠름</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Send to multiple recipients at once</source>
@@ -2213,6 +2469,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>더스트:</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for bitcoin transactions than the network can process.</source>
         <translation>거래량이 블록에 남은 공간보다 적은 경우에는 채굴자나 중계 노드들이 최소 수수료를 허용할 수 있습니다. 최소 수수료만 지불하는건 괜찮지만, 네트워크가 처리할 수 있는 용량을 넘는 비트코인 거래가 있을 경우에는 이 거래가 승인이 안될 수 있다는 점을 유의하세요.</translation>
     </message>
@@ -2221,10 +2478,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>너무 적은 수수료로는 거래 승인이 안될 수도 있습니다 (툴팁을 참고하세요)</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Confirmation time target:</source>
         <translation>승인 시간 목표:</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Enable Replace-By-Fee</source>
         <translation>Replace-By-Fee 옵션 활성화</translation>
     </message>
@@ -2233,6 +2493,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>Replace-By-Fee (BIP-125) 옵션은 보낸 거래의 수수료 상향을 지원해 줍니다. 이 옵션이 없을 경우 거래 지연을 방지하기 위해 더 높은 수수료가 권장됩니다.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Clear &amp;All</source>
         <translation>모두 지우기(&amp;A)</translation>
     </message>
@@ -2277,10 +2539,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>잔돈 복사</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>%1 (%2 blocks)</source>
         <translation>%1(%2 블록)</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>%1 to %2</source>
         <translation>%1을(를) %2(으)로</translation>
     </message>
@@ -2289,6 +2554,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>정말로 보내시겠습니까?</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>or</source>
         <translation>또는</translation>
     </message>
@@ -2311,6 +2577,18 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Total Amount</source>
         <translation>총액</translation>
+=======
+        <source>added as transaction fee</source>
+        <translation>거래 수수료로 추가됨</translation>
+    </message>
+    <message>
+        <source>Total Amount %1</source>
+        <translation>총 액수 %1</translation>
+    </message>
+    <message>
+        <source>or</source>
+        <translation>또는</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -2334,11 +2612,19 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Duplicate address found: addresses should only be used once each.</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>중복된 주소 발견: 주소는 한번만 사용되어야 합니다.</translation>
     </message>
     <message>
         <source>Transaction creation failed!</source>
         <translation>거래 생성에 실패했습니다!</translation>
+=======
+        <translation>중복된 주소 발견: 한번에 하나의 주소에만 작업할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Transaction creation failed!</source>
+        <translation>거래를 생성하는 것을 실패하였습니다!</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>The transaction was rejected with the following reason: %1</source>
@@ -2346,11 +2632,27 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>%1 보다 큰 수수료는 지나치게 높은 수수료 입니다.</translation>
     </message>
     <message>
         <source>Payment request expired.</source>
         <translation>지불 요청이 만료되었습니다.</translation>
+=======
+        <translation>%1 보다 높은 수수료는 너무 높은 수수료 입니다.</translation>
+    </message>
+    <message>
+        <source>Payment request expired.</source>
+        <translation>지불 요청이 만료됨.</translation>
+    </message>
+    <message numerus="yes">
+        <source>%n block(s)</source>
+        <translation><numerusform>%n 블록</numerusform></translation>
+    </message>
+    <message>
+        <source>Pay only the required fee of %1</source>
+        <translation>오직 %1 만의 수수료를 지불하기</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message numerus="yes">
         <source>Estimated to begin confirmation within %n block(s).</source>
@@ -2370,7 +2672,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>The address you selected for change is not part of this wallet. Any or all funds in your wallet may be sent to this address. Are you sure?</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>거스름돈을 위해 선택한 주소는 이 지갑의 일부가 아닙니다. 지갑에 있는 일부 또는 모든 금액을 이 주소로 보낼 수 있습니다. 확실합니까?</translation>
+=======
+        <translation>변경하기 위해 선택한 주소는 이 지갑의 일부가 아닙니다. 지갑에 있는 일부 또는 모든 금액을 이 주소로 보낼 수 있습니다. 확실합니까?</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>(no label)</source>
@@ -2592,6 +2898,64 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <source>Private key for the entered address is not available.</source>
         <translation>입력한 주소에 대한 개인키가 없습니다.</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>서명을 만들려면 "메시지 서명"을 누르십시오</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>입력한 주소가 잘못되었습니다.</translation>
+    </message>
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>주소를 확인하고 다시 시도하십시오.</translation>
+    </message>
+    <message>
+        <source>The entered address does not refer to a key.</source>
+        <translation>입력한 주소는 키에서 참조하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>지갑 잠금 해제를 취소했습니다.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>입력한 주소에 대한 개인키가 없습니다.</translation>
+    </message>
+    <message>
+        <source>Message signing failed.</source>
+        <translation>메시지 서명에 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Message signed.</source>
+        <translation>메시지를 서명했습니다.</translation>
+    </message>
+    <message>
+        <source>The signature could not be decoded.</source>
+        <translation>서명을 해독할 수 없습니다.</translation>
+    </message>
+    <message>
+        <source>Please check the signature and try again.</source>
+        <translation>서명을 확인하고 다시 시도하십시오.</translation>
+    </message>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>메시지 다이제스트와 서명이 일치하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>메시지 검증에 실패했습니다.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>메시지를 검증했습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>SplashScreen</name>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     <message>
         <source>Message signing failed.</source>
         <translation>메시지 서명에 실패했습니다.</translation>
@@ -2640,7 +3004,15 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>conflicted with a transaction with %1 confirmations</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>%1 승인이 있는 거래와 충돌함</translation>
+=======
+        <translation>%1 승인이 있는 거래와 충돌 함</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/오프라인</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>0/unconfirmed, %1</source>
@@ -2670,6 +3042,17 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <source>Status</source>
         <translation>상태</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    <message>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>. 아직 성공적으로 통보하지 않음</translation>
+    </message>
+    <message numerus="yes">
+        <source>, broadcast through %n node(s)</source>
+        <translation><numerusform>, %n개 노드를 통해 전파</numerusform></translation>
+    </message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     <message>
         <source>Date</source>
         <translation>날짜</translation>
@@ -2684,7 +3067,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>From</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>보낸 주소</translation>
+=======
+        <translation>으로부터</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>unknown</source>
@@ -2692,7 +3079,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>To</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>받는 주소</translation>
+=======
+        <translation>에게</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>own address</source>
@@ -2712,11 +3103,19 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message numerus="yes">
         <source>matures in %n more block(s)</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation><numerusform>%n개의 블록검증이 더 필요함</numerusform></translation>
     </message>
     <message>
         <source>not accepted</source>
         <translation>승인되지 않음</translation>
+=======
+        <translation><numerusform>%n개의 더 많은 블록을 숙성</numerusform></translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>허용되지 않음</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Debit</source>
@@ -2755,16 +3154,23 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>거래 총 크기</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Transaction virtual size</source>
         <translation>가상 거래 사이즈</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Output index</source>
         <translation>출력 인덱스</translation>
     </message>
     <message>
         <source>Merchant</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>상점</translation>
+=======
+        <translation>상인</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
@@ -2829,6 +3235,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%1 까지 열림</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Offline</source>
+        <translation>오프라인</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Unconfirmed</source>
         <translation>미확인</translation>
     </message>
@@ -2853,6 +3266,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>충분히 숙성되지 않은 상태 (%1 승인, %2 후에 사용 가능합니다)</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>이 블록은 다른 노드로부터 받지 않아 허용되지 않을 것임!</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Generated but not accepted</source>
         <translation>생성되었으나 거절됨</translation>
     </message>
@@ -2863,6 +3283,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Received from</source>
         <translation>받음(보낸 주소)</translation>
+    </message>
+    <message>
+        <source>Received from</source>
+        <translation>보낸 주소</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2885,9 +3309,26 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>(없음)</translation>
     </message>
     <message>
+        <source>Payment to yourself</source>
+        <translation>자신에게 지불</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>채굴</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>조회전용</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>(없음)</translation>
+    </message>
+    <message>
         <source>(no label)</source>
         <translation>(라벨 없음)</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
     <message>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>거래상황. 마우스를 올리면 검증횟수가 표시됩니다.</translation>
@@ -2916,6 +3357,36 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 <context>
     <name>TransactionView</name>
     <message>
+=======
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>거래상황. 마우스를 올리면 검증횟수가 표시됩니다.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>거래가 이루어진 날짜와 시각.</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>거래의 종류.</translation>
+    </message>
+    <message>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>조회전용 주소가 이 거래에 참여하는지 여부입니다.</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>거래에 대한 사용자 정의 intent/purpose</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>변경된 잔고.</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionView</name>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>All</source>
         <translation>전체</translation>
     </message>
@@ -2946,6 +3417,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Received with</source>
         <translation>받은 주소</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
     </message>
     <message>
         <source>Sent to</source>
@@ -2966,6 +3438,28 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Enter address, transaction id, or label to search</source>
         <translation>검색하기 위한 주소, 거래 아이디 또는 라벨 입력</translation>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>최소 거래액</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>자기거래</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>채굴</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>기타</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>검색하기 위한 주소 또는 표 입력</translation>
     </message>
     <message>
         <source>Min amount</source>
@@ -2974,10 +3468,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Abandon transaction</source>
         <translation>버려진 거래</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
     </message>
     <message>
         <source>Increase transaction fee</source>
         <translation>거래 수수료 증가</translation>
+=======
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Copy address</source>
@@ -2997,7 +3494,11 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Copy raw transaction</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>거래 원본(raw transaction) 복사</translation>
+=======
+        <translation>원시 거래 복사</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Copy full transaction details</source>
@@ -3186,8 +3687,45 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 <context>
     <name>bitcoin-core</name>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포 됨, 첨부 파일 %s 또는 %s을 참조하십시오.</translation>
+=======
+        <source>Options:</source>
+        <translation>옵션:</translation>
+    </message>
+    <message>
+        <source>Specify data directory</source>
+        <translation>데이터 폴더 지정</translation>
+    </message>
+    <message>
+        <source>Connect to a node to retrieve peer addresses, and disconnect</source>
+        <translation>피어 주소를 받기 위해 노드에 연결하고, 받은 후에 연결을 끊습니다</translation>
+    </message>
+    <message>
+        <source>Specify your own public address</source>
+        <translation>공인 주소를 지정하십시오</translation>
+    </message>
+    <message>
+        <source>Accept command line and JSON-RPC commands</source>
+        <translation>명령줄과 JSON-RPC 명령 수락</translation>
+    </message>
+    <message>
+        <source>Accept connections from outside (default: 1 if no -proxy or -connect/-noconnect)</source>
+        <translation>외부 접속을 승인합니다 (기본값 : -proxy 또는 -connect / -noconnect가 없는 경우 1)</translation>
+    </message>
+    <message>
+        <source>Connect only to the specified node(s); -noconnect or -connect=0 alone to disable automatic connections</source>
+        <translation>지정된 노드에만 연결; 자동 연결을 사용하지 않으려면 -noconnect 또는 -connect=0 을 단독으로 사용하십시오.</translation>
+    </message>
+    <message>
+        <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
+        <translation>MIT 소프트웨어 라이센스에 따라 배포 됨, 첨부 파일 %s 또는 %s을 참조하십시오.</translation>
+    </message>
+    <message>
+        <source>If &lt;category&gt; is not supplied or if &lt;category&gt; = 1, output all debugging information.</source>
+        <translation>&lt;category&gt;가 제공되지 않거나 &lt;category&gt; = 1 인 경우, 모든 디버깅 정보를 출력</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Prune configured below the minimum of %d MiB.  Please use a higher number.</source>
@@ -3216,24 +3754,67 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>The %s developers</source>
         <translation>%s 개발자</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
     </message>
     <message>
         <source>Can't generate a change-address key. No keys in the internal keypool and can't generate any keys.</source>
         <translation>거스름돈 주소 생성 불가. 내장 지갑 열쇠 보관함에 열쇠가 없으면 새로운 열쇠를 생성할 수 없습니다.</translation>
+=======
+    </message>
+    <message>
+        <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
+        <translation>충분한 데이터가 축적되지 않은 상태에서의 수수료 추정 기능이 사용하는 수수료 비율(%s/kB) (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Accept relayed transactions received from whitelisted peers even when not relaying transactions (default: %d)</source>
+        <translation>거래의 중계를 하지 않더라도 화이트 리스트에 포함된 피어에서 받은 트랜잭션은 중계하기 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>
+        <translation>선택된 주소로 고정하며 항상 리슨(Listen)합니다. IPv6 프로토콜인 경우  [host]:port 방식의 명령어 표기법을 사용합니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Cannot obtain a lock on data directory %s. %s is probably already running.</source>
         <translation>%s 데이터 디렉토리에 락을 걸 수 없었습니다. %s가 이미 실행 중인 것으로 보입니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Cannot provide specific connections and have addrman find outgoing connections at the same.</source>
         <translation>특정 연결을 제공 할 수없고 addrman이 나가는 연결을 찾을 수 없습니다.</translation>
+=======
+        <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
+        <translation>시작시 모든 지갑 거래를 삭제하고 -rescan을 통하여 블록체인만 복구합니다.</translation>
+    </message>
+    <message>
+        <source>Error loading %s: You can't enable HD on a already existing non-HD wallet</source>
+        <translation>%s 불러오기 오류: 비-HD 지갑이 존재하는 상태에서 HD 지갑을 활성화 할 수 없습니다</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>%s 불러오기 오류: 주소 키는 모두 정확하게 로드되었으나 거래 데이터와 주소록 필드에서 누락이나 오류가 존재할 수 있습니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>
+        <translation>지갑 거래가 바뀌면 명령을 실행합니다.(%s 안의 명령어가 TxID로 바뀝니다)</translation>
+    </message>
+    <message>
+        <source>Extra transactions to keep in memory for compact block reconstructions (default: %u)</source>
+        <translation>압축 블록 재구성을 위해 메모리에 보관해야하는 추가 거래 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>If this block is in the chain assume that it and its ancestors are valid and potentially skip their script verification (0 to verify all, default: %s, testnet: %s)</source>
+        <translation>이 블록이 체인에 있으면 해당 블록과 그 조상이 유효하며 잠재적으로 스크립트 확인을 건너 뜁니다 (0은 모두 확인, 기본값: %s, testnet: %s)</translation>
+    </message>
+    <message>
+        <source>Maximum allowed median peer time offset adjustment. Local perspective of time may be influenced by peers forward or backward by this amount. (default: %u seconds)</source>
+        <translation>허용 된 최대 중간 피어 시간 오프셋 조정. 시간에 대한 지역적 전망치는 전방 또는 후방의 피어에 의해 영향을 받을 수 있습니다. (기본값: %u 초)</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
         <translation>컴퓨터의 날짜와 시간이 올바른지 확인하십시오! 시간이 잘못되면 %s은 제대로 동작하지 않습니다.</translation>
     </message>
@@ -3242,20 +3823,60 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%s가 유용하다고 생각한다면 프로젝트에 공헌해주세요. 이 소프트웨어에 대한 보다 자세한 정보는 %s를 방문해주십시오.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Set lowest fee rate (in %s/kB) for transactions to be included in block creation. (default: %s)</source>
+        <translation>블록 생성시 거래가 포함되도록 최저 수수료율을 설정하십시오 (%s/kB 단위). (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Set the number of script verification threads (%u to %d, 0 = auto, &lt;0 = leave that many cores free, default: %d)</source>
+        <translation>스크립트 인증 스레드의 갯수 설정 (%u-%d, 0 = 자동, &lt;0 = 지정된 코어 개수만큼 사용 안함, 기본값: %d)</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>The block database contains a block which appears to be from the future. This may be due to your computer's date and time being set incorrectly. Only rebuild the block database if you are sure that your computer's date and time are correct</source>
         <translation>블록 데이터베이스에 미래의 블록이 포함되어 있습니다. 이것은 사용자의 컴퓨터의 날짜와 시간이 올바르게 설정되어 있지 않을때 나타날 수 있습니다. 만약 사용자의 컴퓨터의 날짜와 시간이 올바르다고 확신할 때에만 블록 데이터 베이스의 재구성을 하십시오</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>출시 전의 테스트 빌드 입니다. 스스로의 책임하에 사용하십시오. 채굴이나 상업적 용도로 사용하지 마십시오.</translation>
+=======
+        <translation>출시 전의 테스트 빌드 입니다. - 스스로의 책임하에 사용하십시오 - 채굴이나 상업적 용도로 프로그램으로 사용하지 마십시오</translation>
+    </message>
+    <message>
+        <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
+        <translation>데이터베이스를 포크 전 상태로 돌리지 못했습니다. 블록체인을 다시 다운로드 해주십시오.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>This is the transaction fee you may discard if change is smaller than dust at this level</source>
         <translation>이것은 거스름돈이 현재 레벨의 더스트보다 적은 경우 버릴 수 있는 수수료입니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Unable to replay blocks. You will need to rebuild the database using -reindex-chainstate.</source>
         <translation>블록을 재생할 수 없습니다. -reindex-chainstate를 사용하여 데이터베이스를 다시 빌드 해야 합니다.</translation>
+=======
+        <source>Username and hashed password for JSON-RPC connections. The field &lt;userpw&gt; comes in the format: &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt;. A canonical python script is included in share/rpcuser. The client then connects normally using the rpcuser=&lt;USERNAME&gt;/rpcpassword=&lt;PASSWORD&gt; pair of arguments. This option can be specified multiple times</source>
+        <translation>클라이언트JSON-RPC 연결시 사용자 이름과 해시화된 암호문. &lt;userpw&gt; 필드는 &lt;USERNAME&gt;:&lt;SALT&gt;$&lt;HASH&gt; 포멧으로 구성되어 있습니다. 전형적 파이썬 스크립트에선 share/rpcuser가 포함되어 있습니다. 그런 다음 클라이언트는 rpcuser=&lt;USERNAME&gt;/ rpcpassword=&lt;PASSWORD&gt; 쌍의 인수를 사용하여 정상적으로 연결합니다. 이 옵션은 여러번 지정할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>Wallet will not create transactions that violate mempool chain limits (default: %u)</source>
+        <translation>지갑은 mempool chain limit (기본값: %u) 을 위반하는 거래를 생성하지 않습니다.</translation>
+    </message>
+    <message>
+        <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
+        <translation>경고 : 모든 네트워크가 동의해야 하나, 일부 채굴자들에게 문제가 있는 것으로 보입니다. </translation>
+    </message>
+    <message>
+        <source>Warning: We do not appear to fully agree with our peers! You may need to upgrade, or other nodes may need to upgrade.</source>
+        <translation>경고: 현재 비트코인 버전이 다른 네트워크 참여자들과 동일하지 않은 것 같습니다. 당신 또는 다른 참여자들이 동일한 비트코인 버전으로 업그레이드 할 필요가 있습니다.</translation>
+    </message>
+    <message>
+        <source>You need to rebuild the database using -reindex-chainstate to change -txindex</source>
+        <translation>-txindex를 바꾸기 위해서는 -reindex-chainstate 를 사용해서 데이터베이스를 재구성해야 합니다. </translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Unable to rewind the database to a pre-fork state. You will need to redownload the blockchain</source>
@@ -3286,12 +3907,24 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>%s 주소를 확인할 수 없습니다: '%s'</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Chain selection options:</source>
+        <translation>체인 선택 옵션:</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Change index out of range</source>
         <translation>범위 밖의 인덱스 변경</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Config setting for %s only applied on %s network when in [%s] section.</source>
         <translation>%s의 설정은 [%s] 항목에 있을 때 %s 네트워크에만 적용됩니다.</translation>
+=======
+        <source>Connection options:</source>
+        <translation>연결 설정 : </translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Copyright (C) %i-%i</source>
@@ -3304,6 +3937,29 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Do you want to rebuild the block database now?</source>
         <translation>블록 데이터베이스를 다시 생성하시겠습니까?</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    </message>
+    <message>
+        <source>Enable publish hash block in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에 대한 해시 블록 공개 활성화</translation>
+    </message>
+    <message>
+        <source>Enable publish hash transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에 대한 해시 거래 공개 활성화</translation>
+    </message>
+    <message>
+        <source>Enable publish raw block in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에 대한 원시 블록 공개 활성화</translation>
+    </message>
+    <message>
+        <source>Enable publish raw transaction in &lt;address&gt;</source>
+        <translation>&lt;address&gt;에 대한 원시 거래 공개 활성화</translation>
+    </message>
+    <message>
+        <source>Enable transaction replacement in the memory pool (default: %u)</source>
+        <translation>메모리 풀(pool) 내의 거래 치환(replacement) 활성화 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Error initializing block database</source>
@@ -3362,8 +4018,17 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>유효하지 않은 금액 -%s=&lt;amount&gt;: '%s'</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Invalid amount for -discardfee=&lt;amount&gt;: '%s'</source>
         <translation>유효하지 않은 금액 -discardfee=&lt;amount&gt;: '%s'</translation>
+=======
+        <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
+        <translation>유효하지 않은 금액 -fallbackfee=&lt;amount&gt;: '%s'</translation>
+    </message>
+    <message>
+        <source>Keep the transaction memory pool below &lt;n&gt; megabytes (default: %u)</source>
+        <translation>거래 메모리 풀의 용량을 &lt;n&gt;메가바이트 아래로 유지하기 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
@@ -3430,6 +4095,10 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>UTXO 데이터베이스 업그레이드</translation>
     </message>
     <message>
+        <source>Use the test chain</source>
+        <translation>테스트 체인 사용</translation>
+    </message>
+    <message>
         <source>User Agent comment (%s) contains unsafe characters.</source>
         <translation>사용자 정의 코멘트 (%s)에 안전하지 못한 글자가 포함되어 있습니다.</translation>
     </message>
@@ -3443,17 +4112,59 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <translation>오류: 들어오는 연결을 허용하는데 실패했습니다 (listen returned error %s)</translation>
+=======
+        <translation>오류: 들어오는 연결을 리슨(Listen)하는데 실패했습니다 (오류 리턴 %s)</translation>
+    </message>
+    <message>
+        <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
+        <translation>이 사항과 관련있는 경고가 발생하거나 아주 긴 포크가 발생했을 때 명령어를 실행해 주세요. (cmd 명령어 목록에서 %s는 메시지로 대체됩니다) </translation>
+    </message>
+    <message>
+        <source>Fees (in %s/kB) smaller than this are considered zero fee for relaying, mining and transaction creation (default: %s)</source>
+        <translation>해당 금액(%s/kB) 보다 적은 수수료는 중계, 채굴, 거래 생성에서 수수료 면제로 간주됩니다 (기본값: %s)</translation>
+    </message>
+    <message>
+        <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
+        <translation>paytxfee가 설정되어 있지 않다면 평균 n 블록안에 승인이 이루어지도록 충분한 수수료가 포함됩니다 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Invalid amount for -maxtxfee=&lt;amount&gt;: '%s' (must be at least the minrelay fee of %s to prevent stuck transactions)</source>
         <translation>유효하지 않은 금액 -maxtxfee=&lt;amount&gt;: '%s' (거래가 막히는 상황을 방지하게 위해 적어도 %s 의 중계 수수료를 지정해야 합니다)</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    </message>
+    <message>
+        <source>Maximum size of data in data carrier transactions we relay and mine (default: %u)</source>
+        <translation>중계 및 채굴을 할 때 데이터 운송 거래에서 데이터의 최대 크기 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Randomize credentials for every proxy connection. This enables Tor stream isolation (default: %u)</source>
+        <translation>인증정보를 프록시 연결마다 무작위로 합니다. 이는 Tor 스트림을 격리시킬 수 있습니다 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum size of high-priority/low-fee transactions in bytes (default: %d)</source>
+        <translation>최대 크기를 최우선으로 설정 / 바이트당 최소 수수료로 거래(기본값: %d)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>The transaction amount is too small to send after the fee has been deducted</source>
         <translation>거래액이 수수료를 지불하기엔 너무 작습니다</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Use hierarchical deterministic key generation (HD) after BIP32. Only has effect during wallet creation/first start</source>
+        <translation>BIP32 이후에는 계층적 결정성 키 생성 (HD)을 사용하십시오. 지갑 생성/처음 시작 시에만 효과가 있습니다.</translation>
+    </message>
+    <message>
+        <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>
+        <translation>화이트리스트에 포함된 피어는 이미 메모리풀에 포함되어 있어도 DoS 추방이 되지 않으며 그들의 거래가 항상 중계됩니다, 이는 예를 들면 게이트웨이에서 유용합니다.</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>You need to rebuild the database using -reindex to go back to unpruned mode.  This will redownload the entire blockchain</source>
         <translation>블록 축소 모드를 해제하려면 데이터베이스를 재구성하기 위해 -reindex를 사용해야 합니다. 이 명령은 전체 블록체인을 다시 다운로드합니다.</translation>
     </message>
@@ -3486,6 +4197,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>유효하지 않은 넷마스크가 -whitelist: '%s" 를 통해 지정됨</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+        <source>Keep at most &lt;n&gt; unconnectable transactions in memory (default: %u)</source>
+        <translation>최대 &lt;n&gt;개의 연결할 수 없는 거래를 메모리에 저장 (기본값: %u)</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
         <source>Need to specify a port with -whitebind: '%s'</source>
         <translation>-whitebind: '%s' 를 이용하여 포트를 지정해야 합니다</translation>
     </message>
@@ -3494,16 +4212,26 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>시스템 한계로 인하여 -maxconnections를 %d 에서 %d로 줄였습니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Section [%s] is not recognized.</source>
         <translation>[%s] 항목은 인정되지 않습니다.</translation>
+=======
+        <source>Rescan the block chain for missing wallet transactions on startup</source>
+        <translation>시작시 누락된 지갑 거래에 대해 블록 체인을 다시 검색 합니다</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Signing transaction failed</source>
         <translation>거래 서명에 실패했습니다</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Specified -walletdir "%s" does not exist</source>
         <translation>지정한 -walletdir "%s"은 존재하지 않습니다</translation>
+=======
+        <source>Send transactions as zero-fee transactions if possible (default: %u)</source>
+        <translation>가능한 경우 수수료 없이 거래 보내기 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Specified -walletdir "%s" is a relative path</source>
@@ -3532,8 +4260,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>거래액이 너무 적습니다</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Transaction too large</source>
         <translation>거래가 너무 큽니다</translation>
+=======
+        <source>Transaction too large for fee policy</source>
+        <translation>수수료 정책에 비해 거래가 너무 큽니다</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Unable to bind to %s on this computer (bind returned error %s)</source>
@@ -3560,16 +4293,94 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>지갑의 모든거래내역 건너뛰기...</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation>-maxtxfee 값이 너무 큽니다!  하나의 거래에 너무 큰 수수료가 지불 됩니다.</translation>
+=======
+        <source>ZeroMQ notification options:</source>
+        <translation>ZeroMQ 알림 옵션:</translation>
+    </message>
+    <message>
+        <source>Password for JSON-RPC connections</source>
+        <translation>JSON-RPC 연결에 사용할 암호</translation>
+    </message>
+    <message>
+        <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
+        <translation>최고의 블록이 변하면 명령을 실행 (cmd 에 있는 %s 는 블록 해시에 의해 대체되어 짐)</translation>
+    </message>
+    <message>
+        <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
+        <translation>-addnode, -seednode, -connect 옵션에 대해 DNS 탐색 허용</translation>
+    </message>
+    <message>
+        <source>Loading addresses...</source>
+        <translation>주소를 불러오는 중...</translation>
+    </message>
+    <message>
+        <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
+        <translation>(1 = 거래의 메타 데이터를 유지함 예. 계좌정보 와 지불 요구 정보, 2 = 거래 메타 데이터 파기)</translation>
+    </message>
+    <message>
+        <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
+        <translation>-maxtxfee값이 너무 큽니다!  하나의 거래에 너무 큰 수수료가 지불 됩니다.</translation>
+    </message>
+    <message>
+        <source>Do not keep transactions in the mempool longer than &lt;n&gt; hours (default: %u)</source>
+        <translation>메모리 풀에 있는 거래 기록을 &lt;n&gt;시간 후 부터는 유지하지 않기 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Equivalent bytes per sigop in transactions for relay and mining (default: %u)</source>
+        <translation>릴레이 및 마이닝 거래의 sigop 당 동등한 바이트 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Fees (in %s/kB) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>해당 금액(%s/kB) 보다 적은 수수료는 수수료 면제로 간주됩니다.(기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Force relay of transactions from whitelisted peers even if they violate local relay policy (default: %d)</source>
+        <translation>피어들이 로컬 중계 정책을 위반하더라도 화이트 리스트에 포함된 피어인경우 강제로 중계하기 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>How thorough the block verification of -checkblocks is (0-4, default: %u)</source>
+        <translation>-checkblocks을 통한 블록 점검 (0-4, 기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain a full transaction index, used by the getrawtransaction rpc call (default: %u)</source>
+        <translation>getrawtransaction를 RPC CALL를 통해 완전한 거래 인덱스 유지 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
         <translation>이것은 수수료 추정을 이용할 수 없을 때 사용되는 거래 수수료입니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
         <translation>이 제품에는 OpenSSL 프로젝트에서 OpenSSL Toolkit %s으로 사용하기 위해 개발 한 소프트웨어와 에릭 영이 작성한 암호화 소프트웨어 및 토머스 버나드가 작성한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
+=======
+        <source>Output debugging information (default: %u, supplying &lt;category&gt; is optional)</source>
+        <translation>디버그 정보 출력 (기본값: %u, &lt;category&gt; 제공은 선택입니다)</translation>
+    </message>
+    <message>
+        <source>Query for peer addresses via DNS lookup, if low on addresses (default: 1 unless -connect/-noconnect)</source>
+        <translation>보유한 피어 주소가 적은 경우 DNS 조회를 통해 피어 주소를 요청합니다. (-connect / -noconnect가 아니라면 기본값은 1)</translation>
+    </message>
+    <message>
+        <source>Sets the serialization of raw transaction or block hex returned in non-verbose mode, non-segwit(0) or segwit(1) (default: %d)</source>
+        <translation>non-segwit(0) 또는 segwit(1) (기본값: %d) 가 아닌 자세한 정보 표시 모드로 반환 된 원시 거래 또는 블록 hex의 직렬화를 설정합니다.</translation>
+    </message>
+    <message>
+        <source>Support filtering of blocks and transaction with bloom filters (default: %u)</source>
+        <translation>블룸필터를 통해 블록과 거래 필터링 지원 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you may pay when fee estimates are not available.</source>
+        <translation>이것은 수수료 견적을 이용할 수 없을 때 지불 할 수 있는 거래 수수료입니다.</translation>
+    </message>
+    <message>
+        <source>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</source>
+        <translation>이 제품에는 OpenSSL Project에서 OpenSSL Toolkit %s으로 사용하기 위해 개발 한 소프트웨어와 Eric Young이 작성한 암호화 소프트웨어 및 Thomas Bernard가 작성한 UPnP 소프트웨어가 포함되어 있습니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Total length of network version string (%i) exceeds maximum length (%i). Reduce the number or size of uacomments.</source>
@@ -3580,32 +4391,111 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>경고 : 지갑파일이 손상되어 데이터가 복구되었습니다. 원래의 %s 파일은 %s 후에 %s 이름으로 저장됩니다. 잔액과 거래 내역이 정확하지 않다면 백업 파일로 부터 복원해야 합니다. </translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>%s is set very high!</source>
         <translation>%s가 매우 높게 설정되었습니다!</translation>
+=======
+        <source>Whitelist peers connecting from the given IP address (e.g. 1.2.3.4) or CIDR notated network (e.g. 1.2.3.0/24). Can be specified multiple times.</source>
+        <translation>설정된 IP주소 (보기 1.2.3.4) 혹은 CIDR로 작성된 네트워크 (보기 1.2.3.0/24)로 화이트리스트에 포함된 피어에 접속합니다. 이 설정은 복수로 지정 할 수 있습니다.</translation>
+    </message>
+    <message>
+        <source>%s is set very high!</source>
+        <translation>%s가 매우 높게 설정되었습니다!</translation>
+    </message>
+    <message>
+        <source>(default: %s)</source>
+        <translation>(기본값: %s)</translation>
+    </message>
+    <message>
+        <source>Always query for peer addresses via DNS lookup (default: %u)</source>
+        <translation>DNS lookup을 통해 항상 피어주소에 대한 쿼리 보내기 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Error loading wallet %s. Duplicate -wallet filename specified.</source>
         <translation>지갑 %s 로딩 에러,  중복된 -wallet 파일이름을 입력했습니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Starting network threads...</source>
         <translation>네트워크 스레드 시작중...</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
         <translation>지갑은 최소 중계 수수료보다 적은 금액을 지불하는 것을 피할 것입니다.</translation>
+=======
+        <source>Include IP addresses in debug output (default: %u)</source>
+        <translation>디버그 출력에 IP주소 포함하기 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Invalid -proxy address: '%s'</source>
+        <translation>잘못된 -proxy 주소입니다: '%s'</translation>
+    </message>
+    <message>
+        <source>Keypool ran out, please call keypoolrefill first</source>
+        <translation>Keypool이 종료되었습니다. 먼저 keypoolrefill을 호출하십시오.</translation>
+    </message>
+    <message>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>JSON-RPC 연결을 &lt;port&gt;포트로 받기 (기본값: %u 혹은 테스트넷: %u)</translation>
+    </message>
+    <message>
+        <source>Listen for connections on &lt;port&gt; (default: %u or testnet: %u)</source>
+        <translation>&lt;port&gt;포트로 연결 받기 (기본값: %u 혹은 테스트넷: %u)</translation>
+    </message>
+    <message>
+        <source>Maintain at most &lt;n&gt; connections to peers (default: %u)</source>
+        <translation>피어 연결수를 &lt;n&gt;개로 유지 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Make the wallet broadcast transactions</source>
+        <translation>지갑 브로드캐스트 거래를 만들기</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>접속별 최대 수신 버퍼. &lt;n&gt; × 1000바이트 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Maximum per-connection send buffer, &lt;n&gt;*1000 bytes (default: %u)</source>
+        <translation>접속별 최대 전송 버퍼. &lt;n&gt; × 1000바이트 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Prepend debug output with timestamp (default: %u)</source>
+        <translation>디버그 출력에 타임 스탬프 포함하기 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Relay and mine data carrier transactions (default: %u)</source>
+        <translation>데이터 운송 거래를 중계 및 채굴 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>This is the minimum transaction fee you pay on every transaction.</source>
         <translation>이것은 모든 거래에서 지불하는 최소 거래 수수료입니다.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>This is the transaction fee you will pay if you send a transaction.</source>
         <translation>이것은 거래를 보낼 경우 지불 할 거래 수수료입니다.</translation>
     </message>
     <message>
         <source>Transaction amounts must not be negative</source>
         <translation>거래액은 반드시 0보다 큰 값이어야 합니다.</translation>
+=======
+        <source>Send transactions with full-RBF opt-in enabled (default: %u)</source>
+        <translation>full-RBF opt-in이 활성화 된 거래을 전송합니다. (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set key pool size to &lt;n&gt; (default: %u)</source>
+        <translation>키 풀 사이즈를 &lt;n&gt; 로 설정 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Set maximum BIP141 block weight (default: %d)</source>
+        <translation>최대 BIP141 블록 무게 설정 (기본값: %d)</translation>
+    </message>
+    <message>
+        <source>Set the number of threads to service RPC calls (default: %d)</source>
+        <translation>원격 프로시져 호출 서비스를 위한 쓰레드 개수를 설정 (기본값 : %d)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Transaction has too long of a mempool chain</source>
@@ -3620,16 +4510,50 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>-onlynet: '%s' 에 알수없는 네트워크가 지정되었습니다</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Insufficient funds</source>
         <translation>잔액이 부족합니다</translation>
+=======
+        <source>Spend unconfirmed change when sending transactions (default: %u)</source>
+        <translation>거래를 보낼 때 검증되지 않은 잔돈 쓰기 (기본값: %u)</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Cannot upgrade a non HD split wallet without upgrading to support pre split keypool. Please use -upgradewallet=169900 or -upgradewallet with no version specified.</source>
         <translation>HD split을 하지 않은 지갑은 pre split keypool로 업그레이드 하지 않은 이상 업그레이드가 불가능합니다. -upgradewallet=169900 이나 -upgradewallet (버전을 정하지 않고) 명령을 사용하십시오.</translation>
     </message>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
         <translation>수수료 추정이 실패했습니다. Fallbackfee가 비활성화 상태입니다. 몇 블록을 기다리거나 -fallbackfee를 활성화 하세요.</translation>
+=======
+        <source>The wallet will avoid paying less than the minimum relay fee.</source>
+        <translation>지갑은 최소 중계 수수료보다 적은 금액을 지불하는 것을 피할 것입니다.</translation>
+    </message>
+    <message>
+        <source>This is the minimum transaction fee you pay on every transaction.</source>
+        <translation>이것은 모든 거래에서 지불하는 최소 거래 수수료입니다.</translation>
+    </message>
+    <message>
+        <source>This is the transaction fee you will pay if you send a transaction.</source>
+        <translation>이것은 거래를 보낼 경우 지불 할 거래 수수료입니다.</translation>
+    </message>
+    <message>
+        <source>Threshold for disconnecting misbehaving peers (default: %u)</source>
+        <translation>비정상적인 피어의 연결을 차단시키기 위한 임계값 (기본값: %u)</translation>
+    </message>
+    <message>
+        <source>Transaction amounts must not be negative</source>
+        <translation>거래액은 반드시 정수여야합니다.</translation>
+    </message>
+    <message>
+        <source>Transaction has too long of a mempool chain</source>
+        <translation>거래가 너무 긴 mempool 체인을 갖고 있습니다</translation>
+    </message>
+    <message>
+        <source>Transaction must have at least one recipient</source>
+        <translation>거래에는 최소한 한명의 수령인이 있어야 합니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Warning: Private keys detected in wallet {%s} with disabled private keys</source>
@@ -3642,6 +4566,13 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
     <message>
         <source>Loading block index...</source>
         <translation>블록 인덱스를 불러오는 중...</translation>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ko.ts
+=======
+    </message>
+    <message>
+        <source>Add a node to connect to and attempt to keep the connection open</source>
+        <translation>노드를 추가하여 연결하고 연결상태를 계속 유지하려고 시도합니다.</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ko_KR.ts
     </message>
     <message>
         <source>Loading wallet...</source>

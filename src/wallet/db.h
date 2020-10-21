@@ -259,10 +259,19 @@ public:
         SafeDbt datKey(ssKey.data(), ssKey.size());
 
         // Read
+<<<<<<< HEAD
         SafeDbt datValue;
         int ret = pdb->get(activeTxn, datKey, datValue, 0);
         bool success = false;
         if (datValue.get_data() != nullptr) {
+=======
+        Dbt datValue;
+        datValue.set_flags(DB_DBT_MALLOC);
+        int ret = pdb->get(activeTxn, &datKey, &datValue, 0);
+        memory_cleanse(datKey.get_data(), datKey.get_size());
+        bool success = false;
+        if (datValue.get_data() != NULL) {
+>>>>>>> origin/0.14
             // Unserialize value
             try {
                 CDataStream ssValue((char*)datValue.get_data(), (char*)datValue.get_data() + datValue.get_size(), SER_DISK, CLIENT_VERSION);
@@ -271,6 +280,13 @@ public:
             } catch (const std::exception&) {
                 // In this case success remains 'false'
             }
+<<<<<<< HEAD
+=======
+
+            // Clear and free memory
+            memory_cleanse(datValue.get_data(), datValue.get_size());
+            free(datValue.get_data());
+>>>>>>> origin/0.14
         }
         return ret == 0 && success;
     }
@@ -296,7 +312,15 @@ public:
         SafeDbt datValue(ssValue.data(), ssValue.size());
 
         // Write
+<<<<<<< HEAD
         int ret = pdb->put(activeTxn, datKey, datValue, (fOverwrite ? 0 : DB_NOOVERWRITE));
+=======
+        int ret = pdb->put(activeTxn, &datKey, &datValue, (fOverwrite ? 0 : DB_NOOVERWRITE));
+
+        // Clear memory in case it was a private key
+        memory_cleanse(datKey.get_data(), datKey.get_size());
+        memory_cleanse(datValue.get_data(), datValue.get_size());
+>>>>>>> origin/0.14
         return (ret == 0);
     }
 
@@ -315,7 +339,14 @@ public:
         SafeDbt datKey(ssKey.data(), ssKey.size());
 
         // Erase
+<<<<<<< HEAD
         int ret = pdb->del(activeTxn, datKey, 0);
+=======
+        int ret = pdb->del(activeTxn, &datKey, 0);
+
+        // Clear memory
+        memory_cleanse(datKey.get_data(), datKey.get_size());
+>>>>>>> origin/0.14
         return (ret == 0 || ret == DB_NOTFOUND);
     }
 
@@ -332,7 +363,14 @@ public:
         SafeDbt datKey(ssKey.data(), ssKey.size());
 
         // Exists
+<<<<<<< HEAD
         int ret = pdb->exists(activeTxn, datKey, 0);
+=======
+        int ret = pdb->exists(activeTxn, &datKey, 0);
+
+        // Clear memory
+        memory_cleanse(datKey.get_data(), datKey.get_size());
+>>>>>>> origin/0.14
         return (ret == 0);
     }
 
@@ -365,6 +403,15 @@ public:
         ssValue.SetType(SER_DISK);
         ssValue.clear();
         ssValue.write((char*)datValue.get_data(), datValue.get_size());
+<<<<<<< HEAD
+=======
+
+        // Clear and free memory
+        memory_cleanse(datKey.get_data(), datKey.get_size());
+        memory_cleanse(datValue.get_data(), datValue.get_size());
+        free(datKey.get_data());
+        free(datValue.get_data());
+>>>>>>> origin/0.14
         return 0;
     }
 

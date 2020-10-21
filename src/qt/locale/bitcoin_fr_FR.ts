@@ -46,6 +46,7 @@
         <translation>&amp;Supprimer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Choose the address to send coins to</source>
         <translation>Choisissez une adresse où envoyer les bitcoins</translation>
     </message>
@@ -76,6 +77,10 @@
     <message>
         <source>&amp;Copy Address</source>
         <translation>&amp;Copie Adresse</translation>
+=======
+        <source>C&amp;hoose</source>
+        <translation>C&amp;oisir</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Copy &amp;Label</source>
@@ -97,11 +102,15 @@
         <source>Exporting Failed</source>
         <translation>Échec de l'export</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <translation>Une erreur s'est produite en enregistrant la list d'adresses à %1. Merci de reéssayer.</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -136,6 +145,7 @@
         <translation>Répétez la phrase de passe</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show password</source>
         <translation>Montrer le mot de passe</translation>
     </message>
@@ -144,26 +154,35 @@
         <translation>Entrez une nouvelle phrase de passe pour le porte-monnaie.&lt;br/&gt;Veuillez utiliser une phrase de &lt;b&gt;10 caractères aléatoire ou plus&lt;/b&gt; ou bien de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Encrypt wallet</source>
         <translation>Chiffrer le porte-monnaie</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>This operation needs your wallet passphrase to unlock the wallet.</source>
         <translation>Cette operation nécessite la phrase clé de votre porte-monnaie pour le déverouiller</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Unlock wallet</source>
         <translation>Déverrouiller le porte-monnaie</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
         <translation>Cette opération nécessite la phrase clé de votre porte-monnaie pour le décrypter.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Decrypt wallet</source>
         <translation>Décrypter le porte-monnaie</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Change passphrase</source>
         <translation>Changer la phrase de passe</translation>
     </message>
@@ -228,6 +247,12 @@
         <translation>Attention : La touche majuscule est enfoncé.</translation>
     </message>
 </context>
+=======
+        <source>Wallet encrypted</source>
+        <translation>Porte-monnaie chiffré</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>BanTableModel</name>
     <message>
@@ -639,6 +664,7 @@
         <translation>Copier le montant</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy transaction ID</source>
         <translation>Copier l'ID de transaction</translation>
     </message>
@@ -655,6 +681,8 @@
         <translation>Copier la quantité</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy fee</source>
         <translation>Copier les frais</translation>
     </message>
@@ -667,6 +695,7 @@
         <translation>Copier les octets</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy dust</source>
         <translation>Copier la poussière </translation>
     </message>
@@ -679,6 +708,8 @@
         <translation>(%1 verrouillé)</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>yes</source>
         <translation>oui</translation>
     </message>
@@ -687,6 +718,7 @@
         <translation>non</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
         <translation>Cette étiquette devient rouge si un bénéficiaire reçoit une somme plus basse que la limite actuelle de poussière.</translation>
     </message>
@@ -707,6 +739,12 @@
         <translation>(changement)</translation>
     </message>
 </context>
+=======
+        <source>(no label)</source>
+        <translation>(aucune étiquette)</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1147,6 +1185,7 @@
         <source>%1 and %2</source>
         <translation>%1 et %2</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>%1 B</source>
         <translation>%1 O</translation>
@@ -1168,16 +1207,22 @@
         <translation>inconnu</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>QObject::QObject</name>
     </context>
 <context>
     <name>QRImageWidget</name>
     <message>
+<<<<<<< HEAD
         <source>&amp;Save Image...</source>
         <translation>&amp;Sauvegarder image</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>&amp;Copy Image</source>
         <translation>&amp;Copier image</translation>
     </message>
@@ -1185,11 +1230,15 @@
         <source>Save QR Code</source>
         <translation>Sauvegarder QR code</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>PNG Image (*.png)</source>
         <translation>Image PNG (*.png)</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>RPCConsole</name>
     <message>
@@ -1432,10 +1481,13 @@
         <translation>Copier l'étiquette</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy message</source>
         <translation>Copier message</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy amount</source>
         <translation>Copier le montant</translation>
     </message>
@@ -1459,6 +1511,7 @@
         <translation>&amp;Sauvegarder image</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payment to %1</source>
         <translation>Demande de paiement à %1</translation>
     </message>
@@ -1471,14 +1524,19 @@
         <translation>URI</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Address</source>
         <translation>Adresse</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Amount</source>
         <translation>Montant</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Label</source>
         <translation>Étiquette</translation>
     </message>
@@ -1486,10 +1544,13 @@
         <source>Message</source>
         <translation>Message</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Wallet</source>
         <translation>Portefeuille</translation>
     </message>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1509,6 +1570,7 @@
         <source>(no label)</source>
         <translation>(aucune étiquette)</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>(no message)</source>
         <translation>(pas de message)</translation>
@@ -1518,6 +1580,9 @@
         <translation>Demandé</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -1609,10 +1674,13 @@
         <translation>E&amp;voyer</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Copier la quantité</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy amount</source>
         <translation>Copier le montant</translation>
     </message>
@@ -1629,6 +1697,7 @@
         <translation>Copier les octets</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy dust</source>
         <translation>Copier la poussière </translation>
     </message>
@@ -1681,6 +1750,8 @@
         <translation>Attention: Adresse Bitcoin Invalide</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(aucune étiquette)</translation>
     </message>
@@ -1842,6 +1913,7 @@
 <context>
     <name>TransactionDesc</name>
     <message>
+<<<<<<< HEAD
         <source>Open until %1</source>
         <translation>Ouvert jusqu'à %1</translation>
     </message>
@@ -1858,6 +1930,8 @@
         <translation>%1 confirmations</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Status</source>
         <translation>État</translation>
     </message>
@@ -1902,10 +1976,13 @@
         <translation>Crédit</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>not accepted</source>
         <translation>Pas accepté</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Debit</source>
         <translation>Débit</translation>
     </message>
@@ -1918,10 +1995,13 @@
         <translation>Crédit total </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Transaction fee</source>
         <translation>Frais de transaction</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Net amount</source>
         <translation>Montant net</translation>
     </message>
@@ -1934,6 +2014,7 @@
         <translation>Commentaire </translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Transaction ID</source>
         <translation>ID de transaction</translation>
     </message>
@@ -1958,6 +2039,8 @@
         <translation>Montant</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>true</source>
         <translation>vrai</translation>
     </message>
@@ -1980,14 +2063,18 @@
         <translation>Date</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Label</source>
         <translation>Étiquette</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open until %1</source>
         <translation>Ouvert jusqu'à %1</translation>
     </message>
@@ -2028,10 +2115,13 @@
         <translation>Extraction</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>watch-only</source>
         <translation>Lecture uniquement</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>(n/a)</source>
         <translation>(indisponible)</translation>
     </message>
@@ -2056,6 +2146,12 @@
         <translation>Montant ajouté au ou enlevé du solde.</translation>
     </message>
 </context>
+=======
+        <source>(no label)</source>
+        <translation>(aucune étiquette)</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>TransactionView</name>
     <message>
@@ -2083,6 +2179,7 @@
         <translation>Cette année</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Range...</source>
         <translation>Intervalle...</translation>
     </message>
@@ -2103,14 +2200,19 @@
         <translation>Extraction</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Other</source>
         <translation>Autres</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Min amount</source>
         <translation>Montant min</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy address</source>
         <translation>Copier l'adresse</translation>
     </message>
@@ -2123,6 +2225,7 @@
         <translation>Copier le montant</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy transaction ID</source>
         <translation>Copier l'ID de transaction</translation>
     </message>
@@ -2139,22 +2242,30 @@
         <translation>Exporter l'historique des transactions</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Comma separated file (*.csv)</source>
         <translation>Valeurs séparées par des virgules (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Confirmed</source>
         <translation>Confirmée</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Date</source>
         <translation>Date</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Label</source>
         <translation>Étiquette</translation>
     </message>
@@ -2163,6 +2274,7 @@
         <translation>Adresse</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -2183,6 +2295,12 @@
         <translation>à</translation>
     </message>
 </context>
+=======
+        <source>Exporting Failed</source>
+        <translation>Échec de l'export</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>UnitDisplayStatusBarControl</name>
     </context>

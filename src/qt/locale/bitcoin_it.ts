@@ -3,7 +3,11 @@
     <name>AddressBookPage</name>
     <message>
         <source>Right-click to edit address or label</source>
+<<<<<<< HEAD
         <translation>Fai clic con il tasto destro del mouse per modificare l'indirizzo o l'etichetta</translation>
+=======
+        <translation>Fare clic con il tasto destro del mouse per modificare l'indirizzo o l'etichetta</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Create a new address</source>
@@ -208,6 +212,10 @@
         <translation>IMPORTANTE: qualsiasi backup del portafoglio effettuato in precedenza dovrà essere sostituito con il file del portafoglio cifrato appena generato. Per ragioni di sicurezza, i precedenti backup del file del portafoglio non cifrato diventeranno inservibili non appena si inizierà ad utilizzare il nuovo portafoglio cifrato.</translation>
     </message>
     <message>
+        <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
+        <translation>IMPORTANTE: qualsiasi backup del file portamonete effettuato in precedenza dovrà essere sostituito con il file del portamonete cifrato appena generato. Per ragioni di sicurezza, i precedenti backup del file del portamonete non cifrato diventeranno inservibili non appena si inizierà ad utilizzare il nuovo portamonete cifrato.</translation>
+    </message>
+    <message>
         <source>Wallet encryption failed</source>
         <translation>Cifratura portafoglio fallita</translation>
     </message>
@@ -218,6 +226,14 @@
     <message>
         <source>The supplied passphrases do not match.</source>
         <translation>Le passphrase fornite non corrispondono.</translation>
+    </message>
+    <message>
+        <source>Wallet encryption failed due to an internal error. Your wallet was not encrypted.</source>
+        <translation>Crittaggio fallito a causa di un errore interno. Il portamonete non è stato crittato.</translation>
+    </message>
+    <message>
+        <source>The supplied passphrases do not match.</source>
+        <translation>Le frasi di accesso non corrispondono.</translation>
     </message>
     <message>
         <source>Wallet unlock failed</source>
@@ -239,6 +255,21 @@
         <source>Warning: The Caps Lock key is on!</source>
         <translation>Attenzione: è attivo il tasto Blocco maiuscole (Caps lock)!</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Wallet decryption failed</source>
+        <translation>Decrittazione del portamonete fallita.</translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>La frase di accesso al portamonete è stata cambiata con successo.</translation>
+    </message>
+    <message>
+        <source>Warning: The Caps Lock key is on!</source>
+        <translation>Attenzione: è attivo il tasto blocco maiuscole !</translation>
+    </message>
+>>>>>>> origin/0.14
 </context>
 <context>
     <name>BanTableModel</name>
@@ -785,6 +816,7 @@
         <translation>(resto)</translation>
     </message>
 </context>
+<<<<<<< HEAD
 <context>
     <name>CreateWalletActivity</name>
     <message>
@@ -839,6 +871,8 @@
         <translation>Crea</translation>
     </message>
 </context>
+=======
+>>>>>>> origin/0.14
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -862,6 +896,13 @@
         <translation>&amp;Indirizzo</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>New receiving address</source>
+        <translation>Nuovo indirizzo di ricezione</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14
         <source>New sending address</source>
         <translation>Nuovo indirizzo d'invio</translation>
     </message>
@@ -878,6 +919,7 @@
         <translation>L'indirizzo inserito "%1" non è un indirizzo bitcoin valido.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
         <translation>L'indirizzo "%1" esiste già come indirizzo di ricezione con l'etichetta "%2" e quindi non può essere aggiunto come indirizzo di invio.</translation>
     </message>
@@ -888,6 +930,14 @@
     <message>
         <source>Could not unlock wallet.</source>
         <translation>Impossibile sbloccare il portafoglio.</translation>
+=======
+        <source>The entered address "%1" is already in the address book.</source>
+        <translation>L'indirizzo inserito "%1" è già in rubrica.</translation>
+    </message>
+    <message>
+        <source>Could not unlock wallet.</source>
+        <translation>Impossibile sbloccare il portamonete.</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>New key generation failed.</source>
@@ -1026,6 +1076,7 @@
         <translation>Modulo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the bitcoin network, as detailed below.</source>
         <translation>Transazioni recenti potrebbero non essere visibili ancora, perciò il saldo del tuo portafoglio potrebbe non essere corretto. Questa informazione risulterà corretta quando il tuo portafoglio avrà terminato la sincronizzazione con la rete bitcoin, come indicato in dettaglio più sotto.</translation>
     </message>
@@ -1034,6 +1085,8 @@
         <translation>Il tentativo di spendere bitcoin legati a transazioni non ancora visualizzate non verrà accettato dalla rete.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Number of blocks left</source>
         <translation>Numero di blocchi mancanti</translation>
     </message>
@@ -1050,6 +1103,7 @@
         <translation>Progresso</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Progress increase per hour</source>
         <translation>Aumento dei progressi per ogni ora</translation>
     </message>
@@ -1062,6 +1116,8 @@
         <translation>Tempo stimato al completamento della sincronizzazione</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Hide</source>
         <translation>Nascondi</translation>
     </message>
@@ -1093,6 +1149,7 @@
         <translation>Seleziona il file di richiesta di pagamento da aprire</translation>
     </message>
 </context>
+<<<<<<< HEAD
 <context>
     <name>OpenWalletActivity</name>
     <message>
@@ -1112,6 +1169,8 @@
         <translation>Aprendo il Portafoglio&lt;b&gt;%1&lt;/b&gt;...</translation>
     </message>
 </context>
+=======
+>>>>>>> origin/0.14
 <context>
     <name>OptionsDialog</name>
     <message>
@@ -1478,6 +1537,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Gestione URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>'bitcoin://' is not a valid URI. Use 'bitcoin:' instead.</source>
         <translation>'bitcoin://' non è un URI valido. Usa invece 'bitcoin:'.</translation>
     </message>
@@ -1486,10 +1546,13 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Stai usando un URL BIP70 che, in futuro, non sarà piú supportato.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Payment request fetch URL is invalid: %1</source>
         <translation>URL di recupero della Richiesta di pagamento non valido: %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Cannot process payment request because BIP70 support was not compiled in.</source>
         <translation>Non posso completare la richiesta di pagamento perché il supporto per BIP70 non è stato incluso in fase di compilazione.</translation>
     </message>
@@ -1502,6 +1565,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Se stai ricevendo questo errore dovresti richiedere al venditore di fornirti un URI compatibile con BIP21.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Invalid payment address %1</source>
         <translation>Indirizzo di pagamento non valido %1</translation>
     </message>
@@ -1562,6 +1627,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>La richiesta di pagamento non può essere processata!</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Bad response from server %1</source>
         <translation> Risposta errata da parte del server %1 </translation>
     </message>
@@ -1570,6 +1636,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation> Errore di richiesta di rete</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Payment acknowledged</source>
         <translation>Pagamento riconosciuto</translation>
     </message>
@@ -1585,6 +1653,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Nodo/Servizio</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>NodeId</source>
         <translation>Nodeld</translation>
     </message>
@@ -1600,6 +1669,11 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <source>Received</source>
         <translation>Ricevuto</translation>
     </message>
+=======
+        <source>Ping</source>
+        <translation>Ping</translation>
+    </message>
+>>>>>>> origin/0.14
 </context>
 <context>
     <name>QObject</name>
@@ -1667,6 +1741,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <source>%n year(s)</source>
         <translation><numerusform>%n anno</numerusform><numerusform>%n anni</numerusform></translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>%1 B</source>
         <translation>%1 B</translation>
@@ -1691,10 +1766,16 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <source>Error: Cannot parse configuration file: %1.</source>
         <translation>Errore: impossibile analizzare il file di configurazione: %1.</translation>
     </message>
+=======
+    </context>
+<context>
+    <name>QObject::QObject</name>
+>>>>>>> origin/0.14
     <message>
         <source>Error: %1</source>
         <translation>Errore: %1</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>%1 didn't yet exit safely...</source>
         <translation>%1 non è ancora stato chiuso in modo sicuro</translation>
@@ -1703,6 +1784,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <source>unknown</source>
         <translation>sconosciuto</translation>
     </message>
+=======
+>>>>>>> origin/0.14
 </context>
 <context>
     <name>QRImageWidget</name>
@@ -1715,6 +1798,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>&amp;Copia immagine</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Resulting URI too long, try to reduce the text for label / message.</source>
         <translation> L'URI risultante è troppo lungo, prova a ridurre il testo nell'etichetta / messaggio.</translation>
     </message>
@@ -1727,6 +1811,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>Supporto QR code non disponibile.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Save QR Code</source>
         <translation>Salva codice QR</translation>
     </message>
@@ -1982,6 +2068,7 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>&amp;Disconnetti</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Ban for</source>
         <translation>Bannato per</translation>
     </message>
@@ -1990,6 +2077,8 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <translation>&amp;Elimina Ban</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Welcome to the %1 RPC console.</source>
         <translation>Benvenuto nella console RPC di %1.</translation>
     </message>
@@ -2187,11 +2276,15 @@ Per specificare più URL separarli con una barra verticale "|".</translation>
         <source>Message</source>
         <translation>Messaggio</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Wallet</source>
         <translation>Portafoglio</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -2406,6 +2499,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>Copia resto</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>%1 (%2 blocks)</source>
         <translation>%1 (%2 blocchi)</translation>
     </message>
@@ -2418,18 +2512,26 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>%1 to '%2'</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>%1 to %2</source>
         <translation>%1 a %2</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Are you sure you want to send?</source>
         <translation> Sei sicuro di voler inviare?</translation>
+=======
+        <source>added as transaction fee</source>
+        <translation> Includi il costo della transazione</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>or</source>
         <translation>o</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>You can increase the fee later (signals Replace-By-Fee, BIP-125).</source>
         <translation>Si puó aumentare la commissione successivamente (segnalando Replace-By-Fee, BIP-125).</translation>
     </message>
@@ -2466,10 +2568,13 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation> L'importo da pagare deve essere maggiore di 0.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>The amount exceeds your balance.</source>
         <translation>Non hai abbastanza fondi</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The total exceeds your balance when the %1 transaction fee is included.</source>
         <translation> Il totale è superiore al tuo saldo attuale includendo la commissione di %1. </translation>
     </message>
@@ -2478,6 +2583,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation> Rilevato un indirizzo duplicato Ciascun indirizzo dovrebbe essere utilizzato una sola volta.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Transaction creation failed!</source>
         <translation>Creazione della transazione fallita!</translation>
     </message>
@@ -2486,16 +2593,24 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>La transazione è stata respinta per il seguente motivo: %1</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
         <translation> Una commissione maggiore di %1 è considerata irragionevolmente elevata.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Payment request expired.</source>
         <translation>Richiesta di pagamento scaduta.</translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <source>Estimated to begin confirmation within %n block(s).</source>
         <translation><numerusform>Inizio delle conferme stimato entro %n blocchi.</numerusform><numerusform>Inizio delle conferme stimato entro %n blocchi.</numerusform></translation>
+=======
+        <source>%n block(s)</source>
+        <translation><numerusform>%n blocco</numerusform><numerusform>%n blocchi</numerusform></translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Warning: Invalid Bitcoin address</source>
@@ -2506,6 +2621,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>Attenzione: Indirizzo per il resto sconosciuto</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Confirm custom change address</source>
         <translation>Conferma il cambio di indirizzo</translation>
     </message>
@@ -2514,6 +2630,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation>L'indirizzo selezionato per il resto non fa parte di questo portafoglio. Alcuni o tutti i fondi nel tuo portafoglio potrebbero essere inviati a questo indirizzo. Sei sicuro?</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(nessuna etichetta)</translation>
     </message>
@@ -2709,10 +2827,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <source>Reset all verify message fields</source>
         <translation>Reimposta tutti i campi della verifica messaggio</translation>
     </message>
-    <message>
-        <source>Click "Sign Message" to generate signature</source>
-        <translation>Clicca "Firma Messaggio" per generare una firma</translation>
-    </message>
+<<<<<<< HEAD
+=======
     <message>
         <source>The entered address is invalid.</source>
         <translation>L'indirizzo inserito non è valido.</translation>
@@ -2727,7 +2843,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
-        <translation>Sblocco del portafoglio annullato.</translation>
+        <translation>Sblocco del portamonete annullato.</translation>
     </message>
     <message>
         <source>Private key for the entered address is not available.</source>
@@ -2749,6 +2865,491 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <source>Please check the signature and try again.</source>
         <translation>Per favore controlla la firma e prova di nuovo.</translation>
     </message>
+    <message>
+        <source>The signature did not match the message digest.</source>
+        <translation>La firma non corrisponde al digest del messaggio.</translation>
+    </message>
+    <message>
+        <source>Message verification failed.</source>
+        <translation>Verifica messaggio fallita.</translation>
+    </message>
+    <message>
+        <source>Message verified.</source>
+        <translation>Messaggio verificato.</translation>
+    </message>
+</context>
+<context>
+    <name>SplashScreen</name>
+>>>>>>> origin/0.14
+    <message>
+        <source>Click "Sign Message" to generate signature</source>
+        <translation>Clicca "Firma Messaggio" per generare una firma</translation>
+    </message>
+    <message>
+        <source>The entered address is invalid.</source>
+        <translation>L'indirizzo inserito non è valido.</translation>
+    </message>
+<<<<<<< HEAD
+=======
+</context>
+<context>
+    <name>TransactionDesc</name>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/offline</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, %1</source>
+        <translation>0/non confermati, %1</translation>
+    </message>
+    <message>
+        <source>abandoned</source>
+        <translation>abbandonato</translation>
+    </message>
+    <message>
+        <source>%1/unconfirmed</source>
+        <translation>%1/non confermato</translation>
+    </message>
+    <message>
+        <source>%1 confirmations</source>
+        <translation>%1 conferme</translation>
+    </message>
+    <message>
+        <source>Status</source>
+        <translation>Stato</translation>
+    </message>
+    <message>
+        <source>, has not been successfully broadcast yet</source>
+        <translation>, non è ancora stata trasmessa con successo</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Sorgente</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Generato</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Da</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>sconosciuto</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>A</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>proprio indirizzo</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>sola lettura</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation>etichetta</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>Credito</translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>non accettate</translation>
+    </message>
+    <message>
+        <source>Debit</source>
+        <translation>Debito</translation>
+    </message>
+    <message>
+        <source>Total debit</source>
+        <translation>Debito totale</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Credito totale</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Commissione transazione</translation>
+    </message>
+    <message>
+        <source>Net amount</source>
+        <translation>Importo netto</translation>
+    </message>
+    <message>
+        <source>Message</source>
+        <translation>Messaggio</translation>
+    </message>
+    <message>
+        <source>Comment</source>
+        <translation>Commento</translation>
+    </message>
+    <message>
+        <source>Transaction ID</source>
+        <translation>ID della transazione</translation>
+    </message>
+    <message>
+        <source>Merchant</source>
+        <translation>Commerciante</translation>
+    </message>
+    <message>
+        <source>Debug information</source>
+        <translation>Informazione di debug</translation>
+    </message>
+    <message>
+        <source>Transaction</source>
+        <translation>Transazione</translation>
+    </message>
+    <message>
+        <source>Inputs</source>
+        <translation>Input</translation>
+    </message>
+    <message>
+        <source>Amount</source>
+        <translation>Importo</translation>
+    </message>
+    <message>
+        <source>true</source>
+        <translation>vero</translation>
+    </message>
+    <message>
+        <source>false</source>
+        <translation>falso</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionDescDialog</name>
+>>>>>>> origin/0.14
+    <message>
+        <source>Please check the address and try again.</source>
+        <translation>Per favore controlla l'indirizzo e prova di nuovo.</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
+        <source>The entered address does not refer to a key.</source>
+        <translation>L'indirizzo bitcoin inserito non è associato a nessuna chiave.</translation>
+    </message>
+    <message>
+        <source>Wallet unlock was cancelled.</source>
+        <translation>Sblocco del portafoglio annullato.</translation>
+    </message>
+    <message>
+        <source>Private key for the entered address is not available.</source>
+        <translation>La chiave privata per l'indirizzo inserito non è disponibile.</translation>
+    </message>
+    <message>
+        <source>Message signing failed.</source>
+        <translation>Firma messaggio fallita.</translation>
+=======
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etichetta</translation>
+    </message>
+    <message>
+        <source>Offline</source>
+        <translation>Offline</translation>
+    </message>
+    <message>
+        <source>Unconfirmed</source>
+        <translation>Non confermata</translation>
+    </message>
+    <message>
+        <source>Confirmed (%1 confirmations)</source>
+        <translation>Confermata (%1 conferme)</translation>
+    </message>
+    <message>
+        <source>This block was not received by any other nodes and will probably not be accepted!</source>
+        <translation>Questo blocco non è stato ricevuto da alcun altro nodo e probabilmente non sarà accettato!</translation>
+    </message>
+    <message>
+        <source>Generated but not accepted</source>
+        <translation>Generati, ma non accettati</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ricevuto tramite</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Inviato a</translation>
+    </message>
+    <message>
+        <source>Payment to yourself</source>
+        <translation>Pagamento a te stesso</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Ottenuto dal mining</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>sola lettura</translation>
+    </message>
+    <message>
+        <source>(n/a)</source>
+        <translation>(n/d)</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(nessuna etichetta)</translation>
+    </message>
+    <message>
+        <source>Transaction status. Hover over this field to show number of confirmations.</source>
+        <translation>Stato della transazione. Passare con il mouse su questo campo per visualizzare il numero di conferme.</translation>
+    </message>
+    <message>
+        <source>Date and time that the transaction was received.</source>
+        <translation>Data e ora in cui la transazione è stata ricevuta.</translation>
+    </message>
+    <message>
+        <source>Type of transaction.</source>
+        <translation>Tipo di transazione.</translation>
+    </message>
+    <message>
+        <source>Whether or not a watch-only address is involved in this transaction.</source>
+        <translation>Indica se un indirizzo di sola lettura sia o meno coinvolto in questa transazione.</translation>
+    </message>
+    <message>
+        <source>User-defined intent/purpose of the transaction.</source>
+        <translation>Intento/scopo della transazione definito dall'utente.</translation>
+    </message>
+    <message>
+        <source>Amount removed from or added to balance.</source>
+        <translation>Importo rimosso o aggiunto al saldo.</translation>
+    </message>
+</context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>All</source>
+        <translation>Tutti</translation>
+    </message>
+    <message>
+        <source>Today</source>
+        <translation>Oggi</translation>
+    </message>
+    <message>
+        <source>This week</source>
+        <translation>Questa settimana</translation>
+    </message>
+    <message>
+        <source>This month</source>
+        <translation>Questo mese</translation>
+    </message>
+    <message>
+        <source>Last month</source>
+        <translation>Il mese scorso</translation>
+    </message>
+    <message>
+        <source>This year</source>
+        <translation>Quest'anno</translation>
+    </message>
+    <message>
+        <source>Range...</source>
+        <translation>Intervallo...</translation>
+    </message>
+    <message>
+        <source>Received with</source>
+        <translation>Ricevuto tramite</translation>
+    </message>
+    <message>
+        <source>Sent to</source>
+        <translation>Inviato a</translation>
+    </message>
+    <message>
+        <source>To yourself</source>
+        <translation>A te stesso</translation>
+    </message>
+    <message>
+        <source>Mined</source>
+        <translation>Ottenuto dal mining</translation>
+    </message>
+    <message>
+        <source>Other</source>
+        <translation>Altro</translation>
+    </message>
+    <message>
+        <source>Enter address or label to search</source>
+        <translation>Inserisci un indirizzo o un'etichetta da cercare</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Importo minimo</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Copia indirizzo</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Copia etichetta</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Copia l'importo</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Copia l'ID transazione</translation>
+    </message>
+    <message>
+        <source>Copy raw transaction</source>
+        <translation>Copia la transazione raw</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Modifica l'etichetta</translation>
+    </message>
+    <message>
+        <source>Show transaction details</source>
+        <translation>Mostra i dettagli della transazione</translation>
+    </message>
+    <message>
+        <source>Export Transaction History</source>
+        <translation>Esporta lo storico delle transazioni</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Testo CSV (*.csv)</translation>
+    </message>
+    <message>
+        <source>Confirmed</source>
+        <translation>Confermato</translation>
+    </message>
+    <message>
+        <source>Watch-only</source>
+        <translation>Sola lettura</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Data</translation>
+    </message>
+    <message>
+        <source>Type</source>
+        <translation>Tipo</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etichetta</translation>
+>>>>>>> origin/0.14
+    </message>
+    <message>
+        <source>Message signed.</source>
+        <translation>Messaggio firmato.</translation>
+    </message>
+    <message>
+<<<<<<< HEAD
+        <source>The signature could not be decoded.</source>
+        <translation>Non è stato possibile decodificare la firma.</translation>
+    </message>
+=======
+        <source>ID</source>
+        <translation>ID</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Esportazione Fallita</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the transaction history to %1.</source>
+        <translation>Si è verificato un errore durante il salvataggio dello storico delle transazioni in %1.</translation>
+    </message>
+    <message>
+        <source>Exporting Successful</source>
+        <translation>Esportazione Riuscita</translation>
+    </message>
+    <message>
+        <source>The transaction history was successfully saved to %1.</source>
+        <translation>Lo storico delle transazioni e' stato salvato con successo in %1.</translation>
+    </message>
+    <message>
+        <source>Range:</source>
+        <translation>Intervallo:</translation>
+    </message>
+    <message>
+        <source>to</source>
+        <translation>a</translation>
+    </message>
+</context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+>>>>>>> origin/0.14
+    <message>
+        <source>Please check the signature and try again.</source>
+        <translation>Per favore controlla la firma e prova di nuovo.</translation>
+    </message>
+<<<<<<< HEAD
+=======
+</context>
+<context>
+    <name>WalletFrame</name>
+    <message>
+        <source>No wallet has been loaded.</source>
+        <translation>Non è stato caricato alcun portamonete.</translation>
+    </message>
+</context>
+<context>
+    <name>WalletModel</name>
+    <message>
+        <source>Send Coins</source>
+        <translation>Invia Bitcoin</translation>
+    </message>
+</context>
+<context>
+    <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>&amp;Esporta</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>Esporta su file i dati contenuti nella tabella corrente</translation>
+    </message>
+    <message>
+        <source>Backup Wallet</source>
+        <translation>Backup Portamonete</translation>
+    </message>
+    <message>
+        <source>Wallet Data (*.dat)</source>
+        <translation>Dati Portamonete (*.dat)</translation>
+    </message>
+    <message>
+        <source>Backup Failed</source>
+        <translation>Backup Fallito</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the wallet data to %1.</source>
+        <translation>Si è verificato un errore durante il salvataggio dei dati del portamonete in %1.</translation>
+    </message>
+    <message>
+        <source>Backup Successful</source>
+        <translation>Backup eseguito con successo</translation>
+    </message>
+    <message>
+        <source>The wallet data was successfully saved to %1.</source>
+        <translation>Il portamonete è stato correttamente salvato in %1.</translation>
+    </message>
+</context>
+<context>
+    <name>bitcoin-core</name>
+>>>>>>> origin/0.14
     <message>
         <source>The signature did not match the message digest.</source>
         <translation>La firma non corrisponde al digest del messaggio.</translation>

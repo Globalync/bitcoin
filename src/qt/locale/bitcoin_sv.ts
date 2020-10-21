@@ -2764,8 +2764,25 @@ Notera: Då avgiften beräknas per byte kommer en avgift på 50 satoshi tas ut f
         <translation>Transaktionens virtuella storlek</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Output index</source>
         <translation>Utmatningsindex</translation>
+=======
+        <source>Enter address or label to search</source>
+        <translation>Ange en adress eller etikett att söka efter</translation>
+    </message>
+    <message>
+        <source>Min amount</source>
+        <translation>Minsta belopp</translation>
+    </message>
+    <message>
+        <source>Abandon transaction</source>
+        <translation>Avbryt transaktionen</translation>
+    </message>
+    <message>
+        <source>Copy address</source>
+        <translation>Kopiera adress</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Merchant</source>

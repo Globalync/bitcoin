@@ -836,7 +836,11 @@ void CTxMemPool::PrioritiseTransaction(const uint256& hash, const CAmount& nFeeD
             setEntries setDescendants;
             CalculateDescendants(it, setDescendants);
             setDescendants.erase(it);
+<<<<<<< HEAD
             for (txiter descendantIt : setDescendants) {
+=======
+            BOOST_FOREACH(txiter descendantIt, setDescendants) {
+>>>>>>> origin/0.14
                 mapTx.modify(descendantIt, update_ancestor_state(0, nFeeDelta, 0, 0));
             }
             ++nTransactionsUpdated;

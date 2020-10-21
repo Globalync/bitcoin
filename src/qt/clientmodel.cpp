@@ -29,6 +29,7 @@ ClientModel::ClientModel(interfaces::Node& node, OptionsModel *_optionsModel, QO
     QObject(parent),
     m_node(node),
     optionsModel(_optionsModel),
+<<<<<<< HEAD
     peerTableModel(nullptr),
     banTableModel(nullptr),
     m_thread(new QThread(this))
@@ -51,6 +52,19 @@ ClientModel::ClientModel(interfaces::Node& node, OptionsModel *_optionsModel, QO
     // move timer to thread so that polling doesn't disturb main event loop
     timer->moveToThread(m_thread);
     m_thread->start();
+=======
+    peerTableModel(0),
+    banTableModel(0),
+    pollTimer(0)
+{
+    cachedBestHeaderHeight = -1;
+    cachedBestHeaderTime = -1;
+    peerTableModel = new PeerTableModel(this);
+    banTableModel = new BanTableModel(this);
+    pollTimer = new QTimer(this);
+    connect(pollTimer, SIGNAL(timeout()), this, SLOT(updateTimer()));
+    pollTimer->start(MODEL_UPDATE_DELAY);
+>>>>>>> origin/0.14
 
     subscribeToCoreSignals();
 }
@@ -82,11 +96,18 @@ int ClientModel::getHeaderTipHeight() const
     if (cachedBestHeaderHeight == -1) {
         // make sure we initially populate the cache via a cs_main lock
         // otherwise we need to wait for a tip update
+<<<<<<< HEAD
         int height;
         int64_t blockTime;
         if (m_node.getHeaderTip(height, blockTime)) {
             cachedBestHeaderHeight = height;
             cachedBestHeaderTime = blockTime;
+=======
+        LOCK(cs_main);
+        if (pindexBestHeader) {
+            cachedBestHeaderHeight = pindexBestHeader->nHeight;
+            cachedBestHeaderTime = pindexBestHeader->GetBlockTime();
+>>>>>>> origin/0.14
         }
     }
     return cachedBestHeaderHeight;
@@ -95,12 +116,65 @@ int ClientModel::getHeaderTipHeight() const
 int64_t ClientModel::getHeaderTipTime() const
 {
     if (cachedBestHeaderTime == -1) {
+<<<<<<< HEAD
         int height;
         int64_t blockTime;
         if (m_node.getHeaderTip(height, blockTime)) {
             cachedBestHeaderHeight = height;
             cachedBestHeaderTime = blockTime;
         }
+=======
+        LOCK(cs_main);
+        if (pindexBestHeader) {
+            cachedBestHeaderHeight = pindexBestHeader->nHeight;
+            cachedBestHeaderTime = pindexBestHeader->GetBlockTime();
+        }
+    }
+    return cachedBestHeaderTime;
+}
+
+quint64 ClientModel::getTotalBytesRecv() const
+{
+    if(!g_connman)
+        return 0;
+    return g_connman->GetTotalBytesRecv();
+}
+
+quint64 ClientModel::getTotalBytesSent() const
+{
+    if(!g_connman)
+        return 0;
+    return g_connman->GetTotalBytesSent();
+}
+
+QDateTime ClientModel::getLastBlockDate() const
+{
+    LOCK(cs_main);
+
+    if (chainActive.Tip())
+        return QDateTime::fromTime_t(chainActive.Tip()->GetBlockTime());
+
+    return QDateTime::fromTime_t(Params().GenesisBlock().GetBlockTime()); // Genesis block's time of current network
+}
+
+long ClientModel::getMempoolSize() const
+{
+    return mempool.size();
+}
+
+size_t ClientModel::getMempoolDynamicUsage() const
+{
+    return mempool.DynamicMemoryUsage();
+}
+
+double ClientModel::getVerificationProgress(const CBlockIndex *tipIn) const
+{
+    CBlockIndex *tip = const_cast<CBlockIndex *>(tipIn);
+    if (!tip)
+    {
+        LOCK(cs_main);
+        tip = chainActive.Tip();
+>>>>>>> origin/0.14
     }
     return cachedBestHeaderTime;
 }
@@ -239,6 +313,7 @@ static void BlockTipChanged(ClientModel *clientmodel, bool initialSync, int heig
 
     if (fHeader) {
         // cache best headers time and height to reduce future cs_main locks
+<<<<<<< HEAD
         clientmodel->cachedBestHeaderHeight = height;
         clientmodel->cachedBestHeaderTime = blockTime;
     }
@@ -249,6 +324,18 @@ static void BlockTipChanged(ClientModel *clientmodel, bool initialSync, int heig
                                   Q_ARG(int, height),
                                   Q_ARG(QDateTime, QDateTime::fromTime_t(blockTime)),
                                   Q_ARG(double, verificationProgress),
+=======
+        clientmodel->cachedBestHeaderHeight = pIndex->nHeight;
+        clientmodel->cachedBestHeaderTime = pIndex->GetBlockTime();
+    }
+    // if we are in-sync, update the UI regardless of last update time
+    if (!initialSync || now - nLastUpdateNotification > MODEL_UPDATE_DELAY) {
+        //pass a async signal to the UI thread
+        QMetaObject::invokeMethod(clientmodel, "numBlocksChanged", Qt::QueuedConnection,
+                                  Q_ARG(int, pIndex->nHeight),
+                                  Q_ARG(QDateTime, QDateTime::fromTime_t(pIndex->GetBlockTime())),
+                                  Q_ARG(double, clientmodel->getVerificationProgress(pIndex)),
+>>>>>>> origin/0.14
                                   Q_ARG(bool, fHeader));
         assert(invoked);
         nLastUpdateNotification = now;

@@ -74,6 +74,14 @@
         <translation>کپی آدرس</translation>
     </message>
     <message>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>اینها آدرس های شما برای فرستادن پرداخت هاست. همیشه قبل از فرستادن سکه ها مقدار و آدرس دریافت کننده را چک کنید.</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>کپی کردن آدرس</translation>
+    </message>
+    <message>
         <source>Copy &amp;Label</source>
         <translation>کپی برچسب</translation>
     </message>
@@ -83,6 +91,7 @@
     </message>
     <message>
         <source>Export Address List</source>
+<<<<<<< HEAD
         <translation>از فهرست آدرس خروجی گرفته شود</translation>
     </message>
     <message>
@@ -98,6 +107,15 @@
         <translation>خطایی به هنگام ذخیره لیست آدرس در %1 رخ داده است. لطفا دوباره تلاش کنید.</translation>
     </message>
 </context>
+=======
+        <translation>صدور لیست آدرس ها</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>صدور موفق نبود</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -140,6 +158,10 @@
         <translation>برای انجام این عملیات، باید رمز کیف‌پول را وارد کنید.</translation>
     </message>
     <message>
+        <source>This operation needs your wallet passphrase to unlock the wallet.</source>
+        <translation>این عملیات نیاز به عبارت کیف پول شما برای بازگشایی کیف پول دارد</translation>
+    </message>
+    <message>
         <source>Unlock wallet</source>
         <translation>بازکردن کیف‌پول</translation>
     </message>
@@ -148,12 +170,24 @@
         <translation>برای انجام این عملیات، باید رمز کیف‌پول را وارد کنید.</translation>
     </message>
     <message>
+        <source>This operation needs your wallet passphrase to decrypt the wallet.</source>
+        <translation>این عملیات نیاز به عبارت کیف پول شما برای رمزگشایی کیف پول دارد.</translation>
+    </message>
+    <message>
         <source>Decrypt wallet</source>
         <translation>رمزگشایی کیف پول</translation>
     </message>
     <message>
         <source>Change passphrase</source>
+<<<<<<< HEAD
         <translation>تغییر رمزعبور</translation>
+=======
+        <translation>تغییر گذرواژه</translation>
+    </message>
+    <message>
+        <source>Enter the old passphrase and new passphrase to the wallet.</source>
+        <translation>عبارت کهنه و جدید کیف پول را وارد کنید.</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Confirm wallet encryption</source>
@@ -317,6 +351,18 @@
     <message>
         <source>Syncing Headers (%1%)...</source>
         <translation>درحال همگام‌سازی هدرها (%1%)…</translation>
+    </message>
+    <message>
+        <source>Click to disable network activity.</source>
+        <translation>برای غیر فعال کردن فعالیت شبکه کلیک کنید.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>فعالیت شبکه غیر فعال شد.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>برای فعال کردن دوباره فعالیت شبکه کلیک کنید.</translation>
     </message>
     <message>
         <source>Reindexing blocks on disk...</source>
@@ -638,6 +684,10 @@
         <translation>کپی آدرس</translation>
     </message>
     <message>
+        <source>Copy address</source>
+        <translation>کپی ادرس</translation>
+    </message>
+    <message>
         <source>Copy label</source>
         <translation>کپی برچسب</translation>
     </message>
@@ -676,6 +726,18 @@
     <message>
         <source>Copy dust</source>
         <translation>کپی کردن داست:</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>کپی کردن تغییر</translation>
+    </message>
+    <message>
+        <source>Copy fee</source>
+        <translation>رونوشت کارمزد</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>کپی کردن بایت ها</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -855,12 +917,17 @@
         <translation>فرم</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Number of blocks left</source>
         <translation>تعداد بلوک‌های باقیمانده</translation>
     </message>
     <message>
         <source>Unknown...</source>
         <translation>ناشناس...</translation>
+=======
+        <source>Unknown...</source>
+        <translation>مشخص نیست</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Last block time</source>
@@ -868,11 +935,19 @@
     </message>
     <message>
         <source>Progress</source>
+<<<<<<< HEAD
         <translation>پیشرفت</translation>
     </message>
     <message>
         <source>Progress increase per hour</source>
         <translation>سرعت افزایش پیشرفت بر ساعت</translation>
+=======
+        <translation>پیشروی</translation>
+    </message>
+    <message>
+        <source>Progress increase per hour</source>
+        <translation>پیشروی در هر ساعت بیشتر میشود</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>calculating...</source>
@@ -880,7 +955,11 @@
     </message>
     <message>
         <source>Estimated time left until synced</source>
+<<<<<<< HEAD
         <translation>زمان تقریبی باقی‌مانده تا همگام شدن</translation>
+=======
+        <translation>زمان تخمینی تا سینک شدن</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Hide</source>
@@ -1174,6 +1253,23 @@
     </context>
 <context>
     <name>PaymentServer</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Invalid payment request.</source>
+        <translation>درخواست پرداخت نامعتبر.</translation>
+    </message>
+    </context>
+<context>
+    <name>PeerTableModel</name>
+    </context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Amount</source>
+        <translation>مبلغ</translation>
+    </message>
+>>>>>>> origin/0.14
     <message>
         <source>Payment request error</source>
         <translation>درخواست پرداخت با خطا مواجه شد</translation>
@@ -1531,6 +1627,10 @@
         <translation>خارج شده:</translation>
     </message>
     <message>
+        <source>Out:</source>
+        <translation>خروجی:</translation>
+    </message>
+    <message>
         <source>Debug log file</source>
         <translation>فایلِ لاگِ اشکال زدایی</translation>
     </message>
@@ -1540,7 +1640,31 @@
     </message>
     <message>
         <source>1 &amp;hour</source>
+<<<<<<< HEAD
         <translation>1 &amp;ساعت</translation>
+=======
+        <translation>1 ساعت</translation>
+    </message>
+    <message>
+        <source>1 &amp;day</source>
+        <translation>1 روز</translation>
+    </message>
+    <message>
+        <source>1 &amp;week</source>
+        <translation>1 هفته</translation>
+    </message>
+    <message>
+        <source>1 &amp;year</source>
+        <translation>1 سال</translation>
+    </message>
+    <message>
+        <source>Ban for</source>
+        <translation>محدود شده برای</translation>
+    </message>
+    <message>
+        <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
+        <translation>دکمه‌های بالا و پایین برای پیمایش تاریخچه و &lt;b&gt;Ctrl-L&lt;/b&gt; برای پاک کردن صفحه.</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>1 &amp;day</source>
@@ -2372,8 +2496,25 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>نوع تراکنش.</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Amount removed from or added to balance.</source>
         <translation> میزان وجه کم شده یا اضافه شده به حساب</translation>
+=======
+        <source>Copy fee</source>
+        <translation>رونوشت کارمزد</translation>
+    </message>
+    <message>
+        <source>Copy bytes</source>
+        <translation>کپی کردن بایت ها</translation>
+    </message>
+    <message>
+        <source>Copy change</source>
+        <translation>کپی کردن تغییر</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(بدون برچسب)</translation>
+>>>>>>> origin/0.14
     </message>
 </context>
 <context>
@@ -2531,8 +2672,17 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
 <context>
     <name>WalletModel</name>
     <message>
+<<<<<<< HEAD
         <source>Send Coins</source>
         <translation>ارسال کوین ها یا سکه ها</translation>
+=======
+        <source>Copy address</source>
+        <translation>کپی ادرس</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>کپی برچسب</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Increasing transaction fee failed</source>
@@ -2550,6 +2700,28 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <source>Increase:</source>
         <translation>افزایش دادن:</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Exporting Failed</source>
+        <translation>صدور موفق نبود</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+    </context>
+<context>
+    <name>WalletFrame</name>
+    </context>
+<context>
+    <name>WalletModel</name>
+    </context>
+<context>
+    <name>WalletView</name>
+    </context>
+<context>
+    <name>bitcoin-core</name>
+>>>>>>> origin/0.14
     <message>
         <source>New fee:</source>
         <translation>کارمزد جدید:</translation>

@@ -78,6 +78,10 @@
         <translation>Kopiere &amp;Etikett</translation>
     </message>
     <message>
+        <source>Copy &amp;Label</source>
+        <translation>Kopieer &amp;Etiket</translation>
+    </message>
+    <message>
         <source>&amp;Edit</source>
         <translation>&amp;Bearbeiten</translation>
     </message>
@@ -212,6 +216,14 @@
         <translation>Brieftaschen Passwort erfolgreich geändert</translation>
     </message>
     <message>
+        <source>Wallet decryption failed</source>
+        <translation>Beursie-dekripsie het misluk</translation>
+    </message>
+    <message>
+        <source>Wallet passphrase was successfully changed.</source>
+        <translation>Beursie wagwoordfrase is suksesvol verander.</translation>
+    </message>
+    <message>
         <source>Warning: The Caps Lock key is on!</source>
         <translation>Achtung: Die Umschalttaste ist eingeschaltet!</translation>
     </message>
@@ -220,7 +232,11 @@
     <name>BanTableModel</name>
     <message>
         <source>IP/Netmask</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_de_DE.ts
         <translation>IP/Netzmaske</translation>
+=======
+        <translation>IP/Netmasker</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_af.ts
     </message>
     <message>
         <source>Banned Until</source>
@@ -229,6 +245,10 @@
 </context>
 <context>
     <name>BitcoinGUI</name>
+    <message>
+        <source>Sign &amp;message...</source>
+        <translation>Teken &amp;boodskap...</translation>
+    </message>
     <message>
         <source>Synchronizing with network...</source>
         <translation>Über das Netzwerk abgleichen</translation>
@@ -326,6 +346,18 @@
         <translation>Synchronisiere Header (%1%)...</translation>
     </message>
     <message>
+        <source>Click to disable network activity.</source>
+        <translation>Kliek om netwerkaktiwiteit af te skakel.</translation>
+    </message>
+    <message>
+        <source>Network activity disabled.</source>
+        <translation>Netwerkaktiwiteit gedeaktiveer.</translation>
+    </message>
+    <message>
+        <source>Click to enable network activity again.</source>
+        <translation>Kliek om netwerkaktiwiteit weer aan te skakel.</translation>
+    </message>
+    <message>
         <source>Reindexing blocks on disk...</source>
         <translation>Reindexiere Blöcke auf dem Datenträger...</translation>
     </message>
@@ -352,6 +384,14 @@
     <message>
         <source>&amp;Verify message...</source>
         <translation>Nachricht &amp;bestätigen</translation>
+    </message>
+    <message>
+        <source>&amp;Debug window</source>
+        <translation>&amp;Ontfout venster</translation>
+    </message>
+    <message>
+        <source>Open debugging and diagnostic console</source>
+        <translation>Maak ontfouting en diagnostiese konsole oop</translation>
     </message>
     <message>
         <source>Bitcoin</source>

@@ -283,15 +283,30 @@
     </message>
     <message>
         <source>&amp;Encrypt Wallet...</source>
+<<<<<<< HEAD
         <translation>&amp;Cüzdan Şifreleme</translation>
     </message>
     <message>
         <source>&amp;Backup Wallet...</source>
         <translation>&amp;Cüzdan Yedekleme</translation>
+=======
+        <translation>&amp;Cüzdanı Şifrele...</translation>
+    </message>
+    <message>
+        <source>&amp;Backup Wallet...</source>
+        <translation>&amp;Cüzdanı Yedekle...</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>&amp;Change Passphrase...</source>
         <translation>&amp;Parolayı Değiştir...</translation>
+<<<<<<< HEAD
+=======
+    </message>
+    <message>
+        <source>&amp;Sending addresses...</source>
+        <translation>&amp;Gönderme adresleri...</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Open &amp;URI...</source>

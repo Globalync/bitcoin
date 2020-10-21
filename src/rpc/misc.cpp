@@ -260,10 +260,16 @@ static UniValue verifymessage(const JSONRPCRequest& request)
             + HelpExampleCli("signmessage", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"my message\"") +
             "\nVerify the signature\n"
             + HelpExampleCli("verifymessage", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
+<<<<<<< HEAD
             "\nAs a JSON-RPC call\n"
             + HelpExampleRpc("verifymessage", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\", \"signature\", \"my message\"")
                 },
             }.Check(request);
+=======
+            "\nAs json rpc\n"
+            + HelpExampleRpc("verifymessage", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\", \"signature\", \"my message\"")
+        );
+>>>>>>> origin/0.14
 
     LOCK(cs_main);
 
@@ -314,7 +320,11 @@ static UniValue signmessagewithprivkey(const JSONRPCRequest& request)
             + HelpExampleCli("signmessagewithprivkey", "\"privkey\" \"my message\"") +
             "\nVerify the signature\n"
             + HelpExampleCli("verifymessage", "\"1D1ZrZNe3JUo7ZycKEYQQiQAWd9y54F4XX\" \"signature\" \"my message\"") +
+<<<<<<< HEAD
             "\nAs a JSON-RPC call\n"
+=======
+            "\nAs json rpc\n"
+>>>>>>> origin/0.14
             + HelpExampleRpc("signmessagewithprivkey", "\"privkey\", \"my message\"")
                 },
             }.Check(request);

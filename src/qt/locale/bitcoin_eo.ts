@@ -70,6 +70,13 @@
         <translation>Jen viaj Bitmon-adresoj por sendi pagojn. Zorge kontrolu la sumon kaj la alsendan adreson antaŭ ol sendi.</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Jen viaj bitmonaj adresoj por ricevi pagojn. Estas konsilinde uzi apartan ricevan adreson por ĉiu transakcio.</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14
         <source>&amp;Copy Address</source>
         <translation>&amp;Kopii Adreson</translation>
     </message>
@@ -519,6 +526,7 @@
         <translation>Konfirmita</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy address</source>
         <translation>Kopii adreson</translation>
     </message>
@@ -568,6 +576,11 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+=======
+        <source>(no label)</source>
+        <translation>(neniu etikedo)</translation>
+    </message>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1116,6 +1129,31 @@
         <source>&amp;Save Image...</source>
         <translation>&amp;Konservi Bildon...</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Address</source>
+        <translation>Adreso</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Etikedo</translation>
+    </message>
+    </context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Etikedo</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(neniu etikedo)</translation>
+    </message>
+    </context>
+<context>
+    <name>SendCoinsDialog</name>
+>>>>>>> origin/0.14
     <message>
         <source>Request payment to %1</source>
         <translation>Peti pagon al %1</translation>
@@ -1251,6 +1289,7 @@
         <translation>Ŝendi</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Kopii kvanton</translation>
     </message>
@@ -1319,6 +1358,8 @@
         <translation>Averto: Nevalida Bitmon-adreso</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(neniu etikedo)</translation>
     </message>
@@ -1647,6 +1688,7 @@
 <context>
     <name>TransactionTableModel</name>
     <message>
+<<<<<<< HEAD
         <source>Date</source>
         <translation>Dato</translation>
     </message>
@@ -1655,10 +1697,13 @@
         <translation>Tipo</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Label</source>
         <translation>Etikedo</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Open until %1</source>
         <translation>Malferma ĝis %1</translation>
     </message>
@@ -1798,10 +1843,20 @@
         <translation>Montri detalojn de transakcio</translation>
     </message>
     <message>
+=======
+        <source>(no label)</source>
+        <translation>(neniu etikedo)</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+>>>>>>> origin/0.14
         <source>Comma separated file (*.csv)</source>
         <translation>Perkome disigita dosiero (*.csv)</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Confirmed</source>
         <translation>Konfirmita</translation>
     </message>
@@ -1814,6 +1869,8 @@
         <translation>Tipo</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Label</source>
         <translation>Etikedo</translation>
     </message>
@@ -1822,6 +1879,7 @@
         <translation>Adreso</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>ID</source>
         <translation>ID</translation>
     </message>
@@ -1838,6 +1896,12 @@
         <translation>al</translation>
     </message>
 </context>
+=======
+        <source>Exporting Failed</source>
+        <translation>ekspotado malsukcesinta</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>UnitDisplayStatusBarControl</name>
     </context>

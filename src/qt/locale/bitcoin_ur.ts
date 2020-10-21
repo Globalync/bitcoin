@@ -53,6 +53,7 @@
         <source>C&amp;hoose</source>
         <translation>چننا</translation>
     </message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ur.ts
     <message>
         <source>Sending addresses</source>
         <translation>پتے ارسال کیے جارہے ہیں</translation>
@@ -99,6 +100,14 @@
     <message>
         <source>Address</source>
         <translation>پتہ</translation>
+=======
+    </context>
+<context>
+    <name>AddressTableModel</name>
+    <message>
+        <source>Address</source>
+        <translation> پتہ</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ur_PK.ts
     </message>
     </context>
 <context>
@@ -220,6 +229,7 @@
     </message>
     <message>
         <source>Address</source>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ur.ts
         <translation>پتہ</translation>
     </message>
     <message>
@@ -229,6 +239,9 @@
     <message>
         <source>Label</source>
         <translation>لیبل</translation>
+=======
+        <translation> پتہ</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ur_PK.ts
     </message>
     </context>
 <context>
@@ -300,6 +313,7 @@
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD:src/qt/locale/bitcoin_ur.ts
         <source>Comma separated file (*.csv)</source>
         <translation>کاما سے جدا فائلیں (*.csv)</translation>
     </message>
@@ -318,6 +332,10 @@
     <message>
         <source>Exporting Failed</source>
         <translation>ایکسپورٹ ناکام ہوا</translation>
+=======
+        <source>Address</source>
+        <translation> پتہ</translation>
+>>>>>>> origin/0.14:src/qt/locale/bitcoin_ur_PK.ts
     </message>
     </context>
 <context>

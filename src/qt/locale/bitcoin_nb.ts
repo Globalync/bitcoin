@@ -47,6 +47,7 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
+<<<<<<< HEAD
         <translation>Velg en adresse å sende mynter til</translation>
     </message>
     <message>
@@ -96,13 +97,68 @@
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <translation>Fet oppstod en feil ved lagring av adresselisten til %1. Vennligst prøv igjen.</translation>
+=======
+        <translation>Velg adressen å sende mynter til</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Velg adressen til å motta mynter med</translation>
+    </message>
+    <message>
+        <source>Sending addresses</source>
+        <translation>Utsendingsadresser</translation>
+    </message>
+    <message>
+        <source>Receiving addresses</source>
+        <translation>Mottaksadresser</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dette er dine Bitcoin-adresser for sending av betalinger. Sjekk alltid beløpet og mottakeradressen før sending av mynter.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine Bitcoin-adresser for å sende betalinger med. Det er anbefalt å bruke en ny mottaksadresse for hver transaksjon.</translation>
+    </message>
+    <message>
+        <source>&amp;Copy Address</source>
+        <translation>&amp;Kopier Adresse</translation>
+    </message>
+    <message>
+        <source>Copy &amp;Label</source>
+        <translation>Kopier &amp;Merkelapp</translation>
+    </message>
+    <message>
+        <source>&amp;Edit</source>
+        <translation>&amp;Rediger</translation>
+    </message>
+    <message>
+        <source>Export Address List</source>
+        <translation>Eksporter adresseliste</translation>
+    </message>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Kommaseparert fil (*.csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Eksportering feilet</translation>
+    </message>
+    <message>
+        <source>There was an error trying to save the address list to %1. Please try again.</source>
+        <translation>Det oppstod en feil under lagring av adresselisten til %1. Vennligst prøv på nytt.</translation>
+>>>>>>> origin/0.14
     </message>
 </context>
 <context>
     <name>AddressTableModel</name>
     <message>
         <source>Label</source>
+<<<<<<< HEAD
         <translation>Beskrivelse</translation>
+=======
+        <translation>Merkelapp</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Address</source>
@@ -110,7 +166,11 @@
     </message>
     <message>
         <source>(no label)</source>
+<<<<<<< HEAD
         <translation>(ingen beskrivelse)</translation>
+=======
+        <translation>(ingen merkelapp)</translation>
+>>>>>>> origin/0.14
     </message>
 </context>
 <context>
@@ -132,6 +192,7 @@
         <translation>Repeter passorsetningen</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Encrypt wallet</source>
         <translation>Krypter lommeboken</translation>
     </message>
@@ -212,6 +273,28 @@
         <translation>Advarsel: Caps Lock er på!</translation>
     </message>
 </context>
+=======
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation>Oppgi adgangsfrasen til lommeboken.&lt;br/&gt;Vennligst bruk en adgangsfrase med &lt;b&gt;ti eller flere tilfeldige tegn&lt;/b&gt;, eller &lt;b&gt;åtte eller flere ord&lt;/b&gt;.</translation>
+    </message>
+    <message>
+        <source>Encrypt wallet</source>
+        <translation>Krypter lommebok</translation>
+    </message>
+    <message>
+        <source>Unlock wallet</source>
+        <translation>Lås opp lommebok</translation>
+    </message>
+    <message>
+        <source>Decrypt wallet</source>
+        <translation>Dekrypter lommebok</translation>
+    </message>
+    <message>
+        <source>Change passphrase</source>
+        <translation>Endre adgangsfrase</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>BanTableModel</name>
     <message>
@@ -665,6 +748,7 @@
         <translation>Bekreftet</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy address</source>
         <translation>Kopiér adresse</translation>
     </message>
@@ -750,6 +834,11 @@
     </context>
 <context>
     <name>CreateWalletDialog</name>
+=======
+        <source>(no label)</source>
+        <translation>(ingen merkelapp)</translation>
+    </message>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -1967,6 +2056,7 @@
         <translation>&amp;Lagre Bilde...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Request payment to %1</source>
         <translation>Forespør betaling til %1</translation>
     </message>
@@ -1979,10 +2069,13 @@
         <translation>URI</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Address</source>
         <translation>Adresse</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Amount</source>
         <translation>Beløp</translation>
     </message>
@@ -2030,6 +2123,23 @@
         <translation>Forespurt</translation>
     </message>
 </context>
+=======
+        <source>Label</source>
+        <translation>Merkelapp</translation>
+    </message>
+    </context>
+<context>
+    <name>RecentRequestsTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Merkelapp</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(ingen merkelapp)</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>SendCoinsDialog</name>
     <message>
@@ -2169,6 +2279,7 @@
         <translation>S&amp;end</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Kopier mengde</translation>
     </message>
@@ -2295,6 +2406,10 @@
     <message>
         <source>(no label)</source>
         <translation>(ingen beskrivelse)</translation>
+=======
+        <source>(no label)</source>
+        <translation>(ingen merkelapp)</translation>
+>>>>>>> origin/0.14
     </message>
 </context>
 <context>
@@ -2500,6 +2615,42 @@
         <source>Please check the address and try again.</source>
         <translation>Sjekk adressen og prøv igjen.</translation>
     </message>
+<<<<<<< HEAD
+=======
+    </context>
+<context>
+    <name>TransactionTableModel</name>
+    <message>
+        <source>Label</source>
+        <translation>Merkelapp</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(ingen merkelapp)</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Comma separated file (*.csv)</source>
+        <translation>Kommaseparert fil (*.csv)</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Merkelapp</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Adresse</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Eksportering feilet</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+>>>>>>> origin/0.14
     <message>
         <source>The entered address does not refer to a key.</source>
         <translation>Innskrevet adresse refererer ikke til noen nøkkel.</translation>

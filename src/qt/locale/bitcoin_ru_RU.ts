@@ -15,7 +15,11 @@
     </message>
     <message>
         <source>Copy the currently selected address to the system clipboard</source>
+<<<<<<< HEAD
         <translation>Скопировать выбранный адрес в буфер обмена</translation>
+=======
+        <translation>Скопировать текущий выбранный адрес в буфер обмена системы</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>&amp;Copy</source>
@@ -2060,6 +2064,23 @@
         <source>This week</source>
         <translation>Эта неделя</translation>
     </message>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Choose the address to send coins to</source>
+        <translation>Выбрать адрес для отправки монет</translation>
+    </message>
+    <message>
+        <source>Choose the address to receive coins with</source>
+        <translation>Выбрать адрес для получения монет</translation>
+    </message>
+    </context>
+<context>
+    <name>AddressTableModel</name>
+    </context>
+<context>
+    <name>AskPassphraseDialog</name>
+>>>>>>> origin/0.14
     <message>
         <source>This month</source>
         <translation>Этот месяц</translation>

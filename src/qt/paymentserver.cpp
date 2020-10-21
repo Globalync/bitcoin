@@ -39,6 +39,31 @@
 
 const int BITCOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
 const QString BITCOIN_IPC_PREFIX("bitcoin:");
+<<<<<<< HEAD
+=======
+// BIP70 payment protocol messages
+const char* BIP70_MESSAGE_PAYMENTACK = "PaymentACK";
+const char* BIP70_MESSAGE_PAYMENTREQUEST = "PaymentRequest";
+// BIP71 payment protocol media types
+const char* BIP71_MIMETYPE_PAYMENT = "application/bitcoin-payment";
+const char* BIP71_MIMETYPE_PAYMENTACK = "application/bitcoin-paymentack";
+const char* BIP71_MIMETYPE_PAYMENTREQUEST = "application/bitcoin-paymentrequest";
+
+struct X509StoreDeleter {
+      void operator()(X509_STORE* b) {
+          X509_STORE_free(b);
+      }
+};
+
+struct X509Deleter {
+      void operator()(X509* b) { X509_free(b); }
+};
+
+namespace // Anon namespace
+{
+    std::unique_ptr<X509_STORE, X509StoreDeleter> certStore;
+}
+>>>>>>> origin/0.14
 
 //
 // Create a name that is unique for:

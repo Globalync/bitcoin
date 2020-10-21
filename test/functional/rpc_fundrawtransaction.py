@@ -64,6 +64,7 @@ class RawTransactionsTest(BitcoinTestFramework):
         self.nodes[0].generate(121)
         self.sync_all()
 
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         self.test_change_position()
         self.test_simple()
         self.test_simple_two_coins()
@@ -97,6 +98,9 @@ class RawTransactionsTest(BitcoinTestFramework):
     def test_change_position(self):
         """Ensure setting changePosition in fundraw with an exact match is handled properly."""
         self.log.info("Test fundrawtxn changePosition option")
+=======
+        # ensure that setting changePosition in fundraw with an exact match is handled properly
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
         rawmatch = self.nodes[2].createrawtransaction([], {self.nodes[2].getnewaddress():50})
         rawmatch = self.nodes[2].fundrawtransaction(rawmatch, {"changePosition":1, "subtractFeeFromOutputs":[0]})
         assert_equal(rawmatch["changepos"], -1)
@@ -209,10 +213,14 @@ class RawTransactionsTest(BitcoinTestFramework):
         dec_tx  = self.nodes[2].decoderawtransaction(rawtx)
         assert_equal(utx['txid'], dec_tx['vin'][0]['txid'])
 
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-3, "Unexpected key foo", self.nodes[2].fundrawtransaction, rawtx, {'foo':'bar'})
 
         # reserveChangeKey was deprecated and is now removed
         assert_raises_rpc_error(-3, "Unexpected key reserveChangeKey", lambda: self.nodes[2].fundrawtransaction(hexstring=rawtx, options={'reserveChangeKey': True}))
+=======
+        assert_raises_jsonrpc(-3, "Unexpected key foo", self.nodes[2].fundrawtransaction, rawtx, {'foo':'bar'})
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
 
     def test_invalid_change_address(self):
         self.log.info("Test fundrawtxn with an invalid change address")
@@ -224,7 +232,11 @@ class RawTransactionsTest(BitcoinTestFramework):
         dec_tx  = self.nodes[2].decoderawtransaction(rawtx)
         assert_equal(utx['txid'], dec_tx['vin'][0]['txid'])
 
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-5, "changeAddress must be a valid bitcoin address", self.nodes[2].fundrawtransaction, rawtx, {'changeAddress':'foobar'})
+=======
+        assert_raises_jsonrpc(-5, "changeAddress must be a valid bitcoin address", self.nodes[2].fundrawtransaction, rawtx, {'changeAddress':'foobar'})
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
 
     def test_valid_change_address(self):
         self.log.info("Test fundrawtxn with a provided change address")
@@ -237,7 +249,11 @@ class RawTransactionsTest(BitcoinTestFramework):
         assert_equal(utx['txid'], dec_tx['vin'][0]['txid'])
 
         change = self.nodes[2].getnewaddress()
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-8, "changePosition out of bounds", self.nodes[2].fundrawtransaction, rawtx, {'changeAddress':change, 'changePosition':2})
+=======
+        assert_raises_jsonrpc(-8, "changePosition out of bounds", self.nodes[2].fundrawtransaction, rawtx, {'changeAddress':change, 'changePosition':2})
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
         rawtxfund = self.nodes[2].fundrawtransaction(rawtx, {'changeAddress': change, 'changePosition': 0})
         dec_tx  = self.nodes[2].decoderawtransaction(rawtxfund['hex'])
         out = dec_tx['vout'][0]
@@ -347,11 +363,20 @@ class RawTransactionsTest(BitcoinTestFramework):
         inputs  = [ {'txid' : "1c7f966dab21119bac53213a2bc7532bff1fa844c124fd750a7d0b1332440bd1", 'vout' : 0} ] #invalid vin!
         outputs = { self.nodes[0].getnewaddress() : 1.0}
         rawtx   = self.nodes[2].createrawtransaction(inputs, outputs)
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-4, "Insufficient funds", self.nodes[2].fundrawtransaction, rawtx)
 
     def test_fee_p2pkh(self):
         """Compare fee of a standard pubkeyhash transaction."""
         self.log.info("Test fundrawtxn p2pkh fee")
+=======
+        dec_tx  = self.nodes[2].decoderawtransaction(rawtx)
+
+        assert_raises_jsonrpc(-4, "Insufficient funds", self.nodes[2].fundrawtransaction, rawtx)
+
+        ############################################################
+        #compare fee of a standard pubkeyhash transaction
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
         inputs = []
         outputs = {self.nodes[1].getnewaddress():1.1}
         rawtx = self.nodes[0].createrawtransaction(inputs, outputs)
@@ -491,8 +516,18 @@ class RawTransactionsTest(BitcoinTestFramework):
         # Make sure funds are received at node1.
         assert_equal(oldBalance+Decimal('1.10000000'), self.nodes[1].getbalance())
 
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
     def test_locked_wallet(self):
         self.log.info("Test fundrawtxn with locked wallet")
+=======
+        ############################################################
+        # locked wallet test
+        self.nodes[1].encryptwallet("test")
+        self.nodes.pop(1)
+        stop_node(self.nodes[0], 0)
+        stop_node(self.nodes[1], 2)
+        stop_node(self.nodes[2], 3)
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
 
         self.nodes[1].encryptwallet("test")
 
@@ -504,14 +539,22 @@ class RawTransactionsTest(BitcoinTestFramework):
         rawtx = self.nodes[1].createrawtransaction(inputs, outputs)
         # fund a transaction that requires a new key for the change output
         # creating the key must be impossible because the wallet is locked
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-4, "Keypool ran out, please call keypoolrefill first", self.nodes[1].fundrawtransaction, rawtx)
+=======
+        assert_raises_jsonrpc(-4, "Insufficient funds", self.nodes[1].fundrawtransaction, rawtx)
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
 
         # Refill the keypool.
         self.nodes[1].walletpassphrase("test", 100)
         self.nodes[1].keypoolrefill(8) #need to refill the keypool to get an internal change address
         self.nodes[1].walletlock()
 
+<<<<<<< HEAD:test/functional/rpc_fundrawtransaction.py
         assert_raises_rpc_error(-13, "walletpassphrase", self.nodes[1].sendtoaddress, self.nodes[0].getnewaddress(), 1.2)
+=======
+        assert_raises_jsonrpc(-13, "walletpassphrase", self.nodes[1].sendtoaddress, self.nodes[0].getnewaddress(), 1.2)
+>>>>>>> origin/0.14:qa/rpc-tests/fundrawtransaction.py
 
         oldBalance = self.nodes[0].getbalance()
 

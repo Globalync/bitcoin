@@ -9,8 +9,13 @@
 #include <QDateTime>
 
 #include <atomic>
+<<<<<<< HEAD
 #include <memory>
 
+=======
+
+class AddressTableModel;
+>>>>>>> origin/0.14
 class BanTableModel;
 class OptionsModel;
 class PeerTableModel;
@@ -72,6 +77,10 @@ public:
     QString blocksDir() const;
 
     bool getProxyInfo(std::string& ip_port) const;
+
+    // caches for the best header
+    mutable std::atomic<int> cachedBestHeaderHeight;
+    mutable std::atomic<int64_t> cachedBestHeaderTime;
 
     // caches for the best header
     mutable std::atomic<int> cachedBestHeaderHeight;

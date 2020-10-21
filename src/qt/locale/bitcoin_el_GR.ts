@@ -54,10 +54,13 @@
         <translation>Επιλέξτε διεύθυνση παραλαβής νομισμάτων</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>C&amp;hoose</source>
         <translation>Ε&amp;πιλογή</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Sending addresses</source>
         <translation>Διευθύνσεις αποστολής</translation>
     </message>
@@ -66,6 +69,7 @@
         <translation>Διευθύνσεις λήψης</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Αυτές είναι οι Bitcoin διευθύνσεις σας για να στέλνετε πληρωμές. Να ελέγχετε πάντα το ποσό, καθώς και τη διεύθυνση παραλήπτη πριν στείλετε νομίσματα.</translation>
     </message>
@@ -74,6 +78,8 @@
         <translation>Αυτές είναι οι Bitcoin διευθύνσεις σας για να λαμβάνετε πληρωμές. Προτείνετε να χρησιμοποιείτε μια νέα διεύθυνση παραλήπτη για κάθε συναλλαγή.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>&amp;Copy Address</source>
         <translation>&amp;Αντιγραφή Διεύθυνσης</translation>
     </message>
@@ -87,21 +93,29 @@
     </message>
     <message>
         <source>Export Address List</source>
+<<<<<<< HEAD
         <translation>Εξαγωγή Λίστας Διευθύνσεων</translation>
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
         <translation>Αρχείο οριοθετημένο με κόμματα (*.csv)</translation>
+=======
+        <translation>Εξαγωγή Λίστας Διεύθυνσεων</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Exporting Failed</source>
         <translation>Αποτυχία Εξαγωγής</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>There was an error trying to save the address list to %1. Please try again.</source>
         <translation>Σφάλμα κατά την προσπάθεια αποθήκευσης της λίστας διευθύνσεων στο %1. Παρακαλώ δοκιμάστε ξανά.</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -136,6 +150,7 @@
         <translation>Επανέλαβε τον νέο κωδικό πρόσβασης</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show password</source>
         <translation>Προβολή κωδικού πρόσβασης</translation>
     </message>
@@ -162,12 +177,17 @@
     <message>
         <source>Decrypt wallet</source>
         <translation>Αποκρυπτογράφησε το πορτοφόλι</translation>
+=======
+        <source>Unlock wallet</source>
+        <translation>Ξεκλειδωσε το πορτοφολι</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Change passphrase</source>
         <translation>Αλλάξτε Φράση Πρόσβασης</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
         <translation>Εισάγετε την παλιά φράση κλειδί και την νέα φράση κλειδί στο πορτοφόλι.</translation>
     </message>
@@ -228,6 +248,12 @@
         <translation>Προσοχη: το πλήκτρο Caps Lock είναι ενεργο.</translation>
     </message>
 </context>
+=======
+        <source>Wallet unlock failed</source>
+        <translation>Το Ξεκλείδωμα του Πορτοφολιού Απέτυχε</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>BanTableModel</name>
     <message>
@@ -629,6 +655,7 @@
         <translation>Αντιγραφή ταυτότητας συναλλαγής</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Αντιγραφή ποσότητας</translation>
     </message>
@@ -653,6 +680,12 @@
         <translation>(αλλαγή)</translation>
     </message>
 </context>
+=======
+        <source>(no label)</source>
+        <translation>(χωρίς ετικέτα)</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -676,6 +709,13 @@
         <translation>&amp;Διεύθυνση</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
+        <source>New receiving address</source>
+        <translation>Νέα Διεύθυνση Λήψης</translation>
+    </message>
+    <message>
+>>>>>>> origin/0.14
         <source>New sending address</source>
         <translation>Νέα Διεύθυνση Αποστολής</translation>
     </message>
@@ -683,6 +723,7 @@
         <source>Edit receiving address</source>
         <translation>Διόρθωση Διεύθυνσης Λήψης</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Edit sending address</source>
         <translation> Επεξεργασία διεύθυνσης αποστολής</translation>
@@ -708,6 +749,9 @@
         <translation>Η δημιουργία νέου κλειδιού απέτυχε.</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>FreespaceChecker</name>
     <message>
@@ -1426,18 +1470,24 @@
         <translation>Αφαίρεση</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy URI</source>
         <translation>Αντιγραφή της επιλεγμένης διεύθυνσης στο πρόχειρο του συστήματος</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy label</source>
         <translation>Αντιγραφή ετικέτας</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy message</source>
         <translation>Αντιγραφή μηνύματος</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy amount</source>
         <translation>Αντιγραφή ποσού</translation>
     </message>
@@ -1461,14 +1511,18 @@
         <translation>&amp;Αποθήκευση εικόνας...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Payment information</source>
         <translation>Πληροφορίες πληρωμής</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Address</source>
         <translation>Διεύθυνση</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Amount</source>
         <translation>Ποσό</translation>
     </message>
@@ -1484,22 +1538,34 @@
         <source>Wallet</source>
         <translation>Πορτοφόλι</translation>
     </message>
+=======
+        <source>Label</source>
+        <translation>Ετικέτα</translation>
+    </message>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
         <source>Date</source>
+<<<<<<< HEAD
         <translation>Ημερομηνία</translation>
+=======
+        <translation>Ημερομήνια</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Label</source>
         <translation>Ετικέτα</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Message</source>
         <translation>Μήνυμα</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(χωρίς ετικέτα)</translation>
     </message>
@@ -1615,14 +1681,18 @@
         <translation>Αποστολή</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Αντιγραφή ποσότητας</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy amount</source>
         <translation>Αντιγραφή ποσού</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy fee</source>
         <translation>Αντιγραφή τελών</translation>
     </message>
@@ -1635,6 +1705,8 @@
         <translation>Κόστος συναλλαγής</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(χωρίς ετικέτα)</translation>
     </message>
@@ -1807,6 +1879,149 @@
 </context>
 <context>
     <name>TransactionDesc</name>
+<<<<<<< HEAD
+=======
+    <message>
+        <source>Open until %1</source>
+        <translation>Ανοιχτό μέχρι %1</translation>
+    </message>
+    <message>
+        <source>%1/offline</source>
+        <translation>%1/αποσυνδεδεμένο</translation>
+    </message>
+    <message>
+        <source>0/unconfirmed, %1</source>
+        <translation>0/ανεπιβεβαίωτο, %1</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Ημερομηνία</translation>
+    </message>
+    <message>
+        <source>Source</source>
+        <translation>Πηγή</translation>
+    </message>
+    <message>
+        <source>Generated</source>
+        <translation>Παράχθηκε</translation>
+    </message>
+    <message>
+        <source>From</source>
+        <translation>Από</translation>
+    </message>
+    <message>
+        <source>unknown</source>
+        <translation>Άγνωστο</translation>
+    </message>
+    <message>
+        <source>To</source>
+        <translation>Προς</translation>
+    </message>
+    <message>
+        <source>own address</source>
+        <translation>δική σας διεύθυνση</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>παρακολούθηση-μόνο</translation>
+    </message>
+    <message>
+        <source>label</source>
+        <translation>ετικέτα</translation>
+    </message>
+    <message>
+        <source>Credit</source>
+        <translation>Πίστωση</translation>
+    </message>
+    <message>
+        <source>not accepted</source>
+        <translation>μη έγκυρο</translation>
+    </message>
+    <message>
+        <source>Total credit</source>
+        <translation>Συνολική πίστωση</translation>
+    </message>
+    <message>
+        <source>Transaction fee</source>
+        <translation>Κόστος συναλλαγής</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionDescDialog</name>
+    <message>
+        <source>This pane shows a detailed description of the transaction</source>
+        <translation>Αυτό το παράθυρο δείχνει μια λεπτομερή περιγραφή της συναλλαγής</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionTableModel</name>
+    <message>
+        <source>Date</source>
+        <translation>Ημερομήνια</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Ετικέτα</translation>
+    </message>
+    <message>
+        <source>Open until %1</source>
+        <translation>Ανοιχτό μέχρι %1</translation>
+    </message>
+    <message>
+        <source>watch-only</source>
+        <translation>παρακολούθηση-μόνο</translation>
+    </message>
+    <message>
+        <source>(no label)</source>
+        <translation>(χωρίς ετικέτα)</translation>
+    </message>
+    </context>
+<context>
+    <name>TransactionView</name>
+    <message>
+        <source>Copy address</source>
+        <translation>Αντιγραφή διεύθυνσης</translation>
+    </message>
+    <message>
+        <source>Copy label</source>
+        <translation>Αντιγραφή ετικέτας</translation>
+    </message>
+    <message>
+        <source>Copy amount</source>
+        <translation>Αντιγραφή ποσού</translation>
+    </message>
+    <message>
+        <source>Copy transaction ID</source>
+        <translation>Αντιγραφή ταυτότητας συναλλαγής</translation>
+    </message>
+    <message>
+        <source>Copy raw transaction</source>
+        <translation>Αντιγραφή ανεπεξέργαστης συναλλαγής</translation>
+    </message>
+    <message>
+        <source>Edit label</source>
+        <translation>Επεξεργασία ετικέτας</translation>
+    </message>
+    <message>
+        <source>Date</source>
+        <translation>Ημερομήνια</translation>
+    </message>
+    <message>
+        <source>Label</source>
+        <translation>Ετικέτα</translation>
+    </message>
+    <message>
+        <source>Address</source>
+        <translation>Διεύθυνση</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Αποτυχία Εξαγωγής</translation>
+    </message>
+    </context>
+<context>
+    <name>UnitDisplayStatusBarControl</name>
+>>>>>>> origin/0.14
     <message>
         <source>Open until %1</source>
         <translation>Ανοιχτό μέχρι %1</translation>

@@ -11,6 +11,15 @@
 #include <util/strencodings.h>
 #include <util/system.h>
 
+<<<<<<< HEAD
+=======
+#include <univalue.h>
+
+#include <boost/bind.hpp>
+#include <boost/filesystem.hpp>
+#include <boost/foreach.hpp>
+#include <boost/shared_ptr.hpp>
+>>>>>>> origin/0.14
 #include <boost/signals2/signal.hpp>
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/split.hpp>

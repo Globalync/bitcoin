@@ -330,12 +330,20 @@
         <translation>Sign &amp;message...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+623"/>
+=======
+        <location line="+429"/>
+>>>>>>> origin/0.14
         <source>Synchronizing with network...</source>
         <translation>Synchronizing with network...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-701"/>
+=======
+        <location line="-507"/>
+>>>>>>> origin/0.14
         <source>&amp;Overview</source>
         <translation>&amp;Overview</translation>
     </message>
@@ -430,7 +438,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+334"/>
+=======
+        <location line="+359"/>
+>>>>>>> origin/0.14
         <source>Click to disable network activity.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -455,12 +467,16 @@
         <translation>Reindexing blocks on disk...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+317"/>
         <source>Proxy is &lt;b&gt;enabled&lt;/b&gt;: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="-1021"/>
+=======
+        <location line="-510"/>
+>>>>>>> origin/0.14
         <source>Send coins to a Bitcoin address</source>
         <translation>Send coins to a Bitcoin address</translation>
     </message>
@@ -490,7 +506,21 @@
         <translation>&amp;Verify message...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-73"/>
+=======
+        <location line="+516"/>
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
+    <message>
+        <location line="-741"/>
+        <source>Wallet</source>
+        <translation>Wallet</translation>
+    </message>
+    <message>
+        <location line="+152"/>
+>>>>>>> origin/0.14
         <source>&amp;Send</source>
         <translation>&amp;Send</translation>
     </message>
@@ -570,7 +600,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
+<<<<<<< HEAD
         <location line="+522"/>
+=======
+        <location line="+356"/>
+>>>>>>> origin/0.14
         <source>%n active connection(s) to Bitcoin network</source>
         <translation>
             <numerusform>%n active connection to Bitcoin network</numerusform>
@@ -631,6 +665,7 @@
         <translation>Up to date</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="-642"/>
         <source>&amp;Sending addresses</source>
         <translation type="unfinished"></translation>
@@ -662,10 +697,14 @@
     </message>
     <message>
         <location line="+7"/>
+=======
+        <location line="-440"/>
+>>>>>>> origin/0.14
         <source>Show the %1 help message to get a list with possible Bitcoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+29"/>
         <source>default wallet</source>
         <translation type="unfinished"></translation>
@@ -697,6 +736,9 @@
     </message>
     <message>
         <location line="+232"/>
+=======
+        <location line="+199"/>
+>>>>>>> origin/0.14
         <source>%1 client</source>
         <translation type="unfinished"></translation>
     </message>
@@ -951,7 +993,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+157"/>
+=======
+        <location line="+181"/>
+>>>>>>> origin/0.14
         <source>yes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1850,8 +1896,13 @@
 <context>
     <name>PaymentServer</name>
     <message>
+<<<<<<< HEAD
         <location filename="../paymentserver.cpp" line="+226"/>
         <location line="+350"/>
+=======
+        <location filename="../paymentserver.cpp" line="+326"/>
+        <location line="+216"/>
+>>>>>>> origin/0.14
         <location line="+42"/>
         <location line="+108"/>
         <location line="+14"/>
@@ -2051,7 +2102,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+699"/>
+=======
+        <location line="+762"/>
+>>>>>>> origin/0.14
         <source>%1 d</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2388,9 +2443,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <location line="+65"/>
         <location filename="../rpcconsole.cpp" line="+497"/>
         <location line="+759"/>
+=======
+        <location line="+60"/>
+        <location filename="../rpcconsole.cpp" line="+460"/>
+        <location line="+719"/>
+>>>>>>> origin/0.14
         <source>Select a peer to view detailed information.</source>
         <translation type="unfinished"></translation>
     </message>

@@ -138,11 +138,14 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Ulangi frasa laluan baru</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show password</source>
         <translation>Tunjukkan kata laluan
 </translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Memasukkan frasa laluan baru kepada dompet.&lt;br/&gt;Sila mengunakkan frasa laluan yang&lt;b&gt;mengandungi 10 atau lebih aksara rawak&lt;/b&gt;,ataupun&lt;b&gt;lapan atau lebih perkataan.&lt;/b&gt;</translation>
     </message>
@@ -329,6 +332,7 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Buka &amp;URI...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Wallet:</source>
         <translation>dompet</translation>
     </message>
@@ -354,6 +358,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Penyelarasn tajuk (%1%)...</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Reindexing blocks on disk...</source>
         <translation>Reindexi blok pada cakera...</translation>
     </message>
@@ -365,6 +371,7 @@ Alihkan fail data ke dalam tab semasa</translation>
         <source>Backup wallet to another location</source>
         <translation>Wallet sandaran ke lokasi lain</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Tukar kata laluan untuk dompet disulitkan</translation>
@@ -444,6 +451,8 @@ Alihkan fail data ke dalam tab semasa</translation>
         <translation>Tunjukkan senarai alamat dan label yang digunakan
 </translation>
     </message>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>CoinControlDialog</name>
@@ -528,10 +537,13 @@ Alihkan fail data ke dalam tab semasa</translation>
         <source>Label</source>
         <translation>Label</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Wallet</source>
         <translation>dompet</translation>
     </message>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>RecentRequestsTableModel</name>

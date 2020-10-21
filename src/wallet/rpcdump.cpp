@@ -413,7 +413,11 @@ UniValue removeprunedfunds(const JSONRPCRequest& request)
     vHash.push_back(hash);
     std::vector<uint256> vHashOut;
 
+<<<<<<< HEAD
     if (pwallet->ZapSelectTx(vHash, vHashOut) != DBErrors::LOAD_OK) {
+=======
+    if(pwalletMain->ZapSelectTx(vHash, vHashOut) != DB_LOAD_OK) {
+>>>>>>> origin/0.14
         throw JSONRPCError(RPC_WALLET_ERROR, "Could not properly delete the transaction.");
     }
 
@@ -618,6 +622,7 @@ UniValue importwallet(const JSONRPCRequest& request)
             pwallet->chain().showProgress("", 100, false); // hide progress dialog in GUI
             throw JSONRPCError(RPC_WALLET_ERROR, "Importing wallets is disabled when private keys are disabled");
         }
+<<<<<<< HEAD
         double total = (double)(keys.size() + scripts.size());
         double progress = 0;
         for (const auto& key_tuple : keys) {
@@ -666,6 +671,22 @@ UniValue importwallet(const JSONRPCRequest& request)
     pwallet->chain().showProgress("", 100, false); // hide progress dialog in GUI
     RescanWallet(*pwallet, reserver, nTimeBegin, false /* update */);
     pwallet->MarkDirty();
+=======
+        pwalletMain->mapKeyMetadata[keyid].nCreateTime = nTime;
+        if (fLabel)
+            pwalletMain->SetAddressBook(keyid, strLabel, "receive");
+        nTimeBegin = std::min(nTimeBegin, nTime);
+    }
+    file.close();
+    pwalletMain->ShowProgress("", 100); // hide progress dialog in GUI
+    pwalletMain->UpdateTimeFirstKey(nTimeBegin);
+
+    CBlockIndex *pindex = chainActive.FindEarliestAtLeast(nTimeBegin - 7200);
+
+    LogPrintf("Rescanning last %i blocks\n", pindex ? chainActive.Height() - pindex->nHeight + 1 : 0);
+    pwalletMain->ScanForWalletTransactions(pindex);
+    pwalletMain->MarkDirty();
+>>>>>>> origin/0.14
 
     if (!fGood)
         throw JSONRPCError(RPC_WALLET_ERROR, "Error adding some keys/scripts to wallet");
@@ -1407,6 +1428,7 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
             pwallet->ReacceptWalletTransactions();
         }
 
+<<<<<<< HEAD
         if (pwallet->IsAbortingRescan()) {
             throw JSONRPCError(RPC_MISC_ERROR, "Rescan aborted by user.");
         }
@@ -1437,6 +1459,36 @@ UniValue importmulti(const JSONRPCRequest& mainRequest)
                                       "be dealt with by downloading and rescanning the relevant blocks (see -reindex "
                                       "and -rescan options).",
                                 GetImportTimestamp(request, now), scannedTime - TIMESTAMP_WINDOW - 1, TIMESTAMP_WINDOW)));
+                    response.push_back(std::move(result));
+                }
+                ++i;
+            }
+=======
+    if (fRescan && fRunScan && requests.size()) {
+        CBlockIndex* pindex = nLowestTimestamp > minimumTimestamp ? chainActive.FindEarliestAtLeast(std::max<int64_t>(nLowestTimestamp - 7200, 0)) : chainActive.Genesis();
+        CBlockIndex* scannedRange = nullptr;
+        if (pindex) {
+            scannedRange = pwalletMain->ScanForWalletTransactions(pindex, true);
+            pwalletMain->ReacceptWalletTransactions();
+>>>>>>> origin/0.14
+        }
+
+        if (!scannedRange || scannedRange->nHeight > pindex->nHeight) {
+            std::vector<UniValue> results = response.getValues();
+            response.clear();
+            response.setArray();
+            size_t i = 0;
+            for (const UniValue& request : requests.getValues()) {
+                // If key creation date is within the successfully scanned
+                // range, or if the import result already has an error set, let
+                // the result stand unmodified. Otherwise replace the result
+                // with an error message.
+                if (GetImportTimestamp(request, now) - 7200 >= scannedRange->GetBlockTimeMax() || results.at(i).exists("error")) {
+                    response.push_back(results.at(i));
+                } else {
+                    UniValue result = UniValue(UniValue::VOBJ);
+                    result.pushKV("success", UniValue(false));
+                    result.pushKV("error", JSONRPCError(RPC_MISC_ERROR, strprintf("Failed to rescan before time %d, transactions may be missing.", scannedRange->GetBlockTimeMax())));
                     response.push_back(std::move(result));
                 }
                 ++i;

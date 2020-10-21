@@ -67,11 +67,19 @@
     </message>
     <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+<<<<<<< HEAD
         <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
     </message>
     <message>
         <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>Berikut ialah alamat-alamat Bitcoin Anda yang digunakan untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerimaan baru untuk setiap transaksi.</translation>
+=======
+        <translation>Ini adalah alamat- alamat Bitcoin Anda untuk mengirimkan pembayaran. Selalu periksa jumlah dan alamat penerima sebelum mengirimkan koin.</translation>
+    </message>
+    <message>
+        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Ini adalah alamat- alamat Bitcoin Anda untuk menerima pembayaran. Dianjurkan untuk menggunakan alamat penerima yang baru setiap melakukan transaksi.</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -91,6 +99,7 @@
     </message>
     <message>
         <source>Comma separated file (*.csv)</source>
+<<<<<<< HEAD
         <translation>Berkas CSV (*.csv)</translation>
     </message>
     <message>
@@ -102,6 +111,15 @@
         <translation>Terjadi kesalahan saat mencoba menyimpan daftar alamat ke %1. Silakan coba lagi.</translation>
     </message>
 </context>
+=======
+        <translation>File yang berformat(*.csv)</translation>
+    </message>
+    <message>
+        <source>Exporting Failed</source>
+        <translation>Mengekspor Gagal</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>AddressTableModel</name>
     <message>
@@ -136,10 +154,13 @@
         <translation>Ulangi kata sandi baru</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Show password</source>
         <translation>Tampilkan kata sandi</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
         <translation>Masukan kata sandi baru ke dompet.&lt;br/&gt;Mohon gunakan kata sandi &lt;b&gt;sepuluh karakter acak atau lebih&lt;/b&gt;, atau &lt;b&gt; delapan atau lebih beberapa kata &lt;/​​b&gt;.</translation>
     </message>
@@ -177,7 +198,11 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR BITCOINS&lt;/b&gt;!</source>
+<<<<<<< HEAD
         <translation>Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
+=======
+        <translation>Peringatan: Jika Anda enkripsi dompet Anda dan lupa kata sandi anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA BITCOIN ANDA&lt;/b&gt;!</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -326,6 +351,7 @@
         <translation>Buka &amp;URI</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Wallet:</source>
         <translation>Wallet:</translation>
     </message>
@@ -334,6 +360,8 @@
         <translation>wallet default</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Click to disable network activity.</source>
         <translation>Klik untuk menonaktifkan aktivitas jaringan.</translation>
     </message>
@@ -657,6 +685,7 @@
         <translation>Salin label</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy amount</source>
         <translation>Salin Jumlah</translation>
     </message>
@@ -677,10 +706,13 @@
         <translation>Salin Kuantitas</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy fee</source>
         <translation>Salin biaya</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy after fee</source>
         <translation>Salin Setelah Upah</translation>
     </message>
@@ -725,6 +757,12 @@
         <translation>(kembalian)</translation>
     </message>
 </context>
+=======
+        <source>(no label)</source>
+        <translation>(tidak ada label)</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>EditAddressDialog</name>
     <message>
@@ -1619,11 +1657,15 @@
         <source>Copy label</source>
         <translation>Salin label</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Copy amount</source>
         <translation>Salin Jumlah</translation>
     </message>
 </context>
+=======
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>ReceiveRequestDialog</name>
     <message>
@@ -1654,10 +1696,13 @@
         <source>Label</source>
         <translation>Label</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Wallet</source>
         <translation>Dompet</translation>
     </message>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1769,6 +1814,7 @@
         <translation>K&amp;irim</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy quantity</source>
         <translation>Salin Kuantitas</translation>
     </message>
@@ -1777,10 +1823,13 @@
         <translation>Salin Jumlah</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Copy fee</source>
         <translation>Salin biaya</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy after fee</source>
         <translation>Salin Setelah Upah</translation>
     </message>
@@ -1805,6 +1854,8 @@
         <translation>Permintaan pembayaran telah kadaluarsa.</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>(no label)</source>
         <translation>(tidak ada label)</translation>
     </message>
@@ -1991,6 +2042,7 @@
         <translation>Salin label</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Copy amount</source>
         <translation>Salin Jumlah</translation>
     </message>
@@ -1999,6 +2051,8 @@
         <translation>Salain ID Transaksi</translation>
     </message>
     <message>
+=======
+>>>>>>> origin/0.14
         <source>Comma separated file (*.csv)</source>
         <translation>Berkas yang berformat(*.csv)</translation>
     </message>

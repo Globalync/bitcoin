@@ -3566,8 +3566,17 @@ Note:  Since the fee is calculated on a per-byte basis, a fee of "100 satoshis p
         <translation>回退区块...</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>The source code is available from %s.</source>
         <translation>可以从 %s 获取源代码。</translation>
+=======
+        <source>Wallet debugging/testing options:</source>
+        <translation>钱包调试/测试选项：</translation>
+    </message>
+    <message>
+        <source>Wallet options:</source>
+        <translation>钱包选项:</translation>
+>>>>>>> origin/0.14
     </message>
     <message>
         <source>Transaction fee and change calculation failed</source>

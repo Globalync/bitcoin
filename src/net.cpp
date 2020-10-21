@@ -398,6 +398,7 @@ CNode* CConnman::ConnectNode(CAddress addrConnect, const char *pszDest, bool fCo
         }
     }
 
+<<<<<<< HEAD
     // Connect
     bool connected = false;
     SOCKET hSocket = INVALID_SOCKET;
@@ -418,6 +419,66 @@ CNode* CConnman::ConnectNode(CAddress addrConnect, const char *pszDest, bool fCo
                 return nullptr;
             }
             connected = ConnectSocketDirectly(addrConnect, hSocket, nConnectTimeout, manual_connection);
+=======
+    return NULL;
+}
+
+void CConnman::DumpBanlist()
+{
+    SweepBanned(); // clean unused entries (if bantime has expired)
+
+    if (!BannedSetIsDirty())
+        return;
+
+    int64_t nStart = GetTimeMillis();
+
+    CBanDB bandb;
+    banmap_t banmap;
+    GetBanned(banmap);
+    if (bandb.Write(banmap)) {
+        SetBannedSetDirty(false);
+    }
+
+    LogPrint("net", "Flushed %d banned node ips/subnets to banlist.dat  %dms\n",
+        banmap.size(), GetTimeMillis() - nStart);
+}
+
+void CNode::CloseSocketDisconnect()
+{
+    fDisconnect = true;
+    LOCK(cs_hSocket);
+    if (hSocket != INVALID_SOCKET)
+    {
+        LogPrint("net", "disconnecting peer=%d\n", id);
+        CloseSocket(hSocket);
+    }
+}
+
+void CConnman::ClearBanned()
+{
+    {
+        LOCK(cs_setBanned);
+        setBanned.clear();
+        setBannedIsDirty = true;
+    }
+    DumpBanlist(); //store banlist to disk
+    if(clientInterface)
+        clientInterface->BannedListChanged();
+}
+
+bool CConnman::IsBanned(CNetAddr ip)
+{
+    bool fResult = false;
+    {
+        LOCK(cs_setBanned);
+        for (banmap_t::iterator it = setBanned.begin(); it != setBanned.end(); it++)
+        {
+            CSubNet subNet = (*it).first;
+            CBanEntry banEntry = (*it).second;
+
+            if(subNet.Match(ip) && GetTime() < banEntry.nBanUntil)
+                fResult = true;
+>>>>>>> origin/0.14
         }
         if (!proxyConnectionFailed) {
             // If a connection to the node was attempted, and failure (if any) is not caused by a problem connecting to
@@ -446,8 +507,18 @@ CNode* CConnman::ConnectNode(CAddress addrConnect, const char *pszDest, bool fCo
     CNode* pnode = new CNode(id, nLocalServices, GetBestHeight(), hSocket, addrConnect, CalculateKeyedNetGroup(addrConnect), nonce, addr_bind, pszDest ? pszDest : "", false, block_relay_only);
     pnode->AddRef();
 
+<<<<<<< HEAD
     // We're making a new connection, harvest entropy from the time (and our peer count)
     RandAddEvent((uint32_t)id);
+=======
+void CConnman::GetBanned(banmap_t &banMap)
+{
+    LOCK(cs_setBanned);
+    // Sweep the banlist so expired bans are not returned
+    SweepBanned();
+    banMap = setBanned; //create a thread safe copy
+}
+>>>>>>> origin/0.14
 
     return pnode;
 }
@@ -1593,10 +1664,17 @@ void CConnman::ThreadDNSAddressSeed()
             seeds_right_now += DNSSEEDS_TO_QUERY_AT_ONCE;
         }
 
+<<<<<<< HEAD
         if (interruptNet) {
             return;
         }
         LogPrintf("Loading addresses from DNS seed %s\n", seed);
+=======
+    BOOST_FOREACH(const CDNSSeedData &seed, vSeeds) {
+        if (interruptNet) {
+            return;
+        }
+>>>>>>> origin/0.14
         if (HaveNameProxy()) {
             AddOneShot(seed);
         } else {
@@ -1617,11 +1695,26 @@ void CConnman::ThreadDNSAddressSeed()
                     vAdd.push_back(addr);
                     found++;
                 }
+<<<<<<< HEAD
                 addrman.Add(vAdd, resolveSource);
             } else {
                 // We now avoid directly using results from DNS Seeds which do not support service bit filtering,
                 // instead using them as a oneshot to get nodes with our desired service bits.
                 AddOneShot(seed);
+=======
+            }
+            if (interruptNet) {
+                return;
+            }
+            // TODO: The seed name resolve may fail, yielding an IP of [::], which results in
+            // addrman assigning the same source to results from different seeds.
+            // This should switch to a hard-coded stable dummy IP for each seed name, so that the
+            // resolve is not required at all.
+            if (!vIPs.empty()) {
+                CService seedSource;
+                Lookup(seed.name.c_str(), seedSource, 0, true);
+                addrman.Add(vAdd, seedSource);
+>>>>>>> origin/0.14
             }
         }
         --seeds_right_now;
@@ -1756,6 +1849,7 @@ void CConnman::ThreadOpenConnections(const std::vector<std::string> connect)
         CAddress addrConnect;
 
         // Only connect out to one peer per network group (/16 for IPv4).
+<<<<<<< HEAD
         int nOutboundFullRelay = 0;
         int nOutboundBlockRelay = 0;
         std::set<std::vector<unsigned char> > setConnected;
@@ -1763,6 +1857,21 @@ void CConnman::ThreadOpenConnections(const std::vector<std::string> connect)
             LOCK(cs_vNodes);
             for (const CNode* pnode : vNodes) {
                 if (!pnode->fInbound && !pnode->m_manual_connection) {
+=======
+        // Do this here so we don't have to critsect vNodes inside mapAddresses critsect.
+        int nOutbound = 0;
+        int nOutboundRelevant = 0;
+        std::set<std::vector<unsigned char> > setConnected;
+        {
+            LOCK(cs_vNodes);
+            BOOST_FOREACH(CNode* pnode, vNodes) {
+                if (!pnode->fInbound && !pnode->fAddnode) {
+
+                    // Count the peers that have all relevant services
+                    if (pnode->fSuccessfullyConnected && !pnode->fFeeler && ((pnode->nServices & nRelevantServices) == nRelevantServices)) {
+                        nOutboundRelevant++;
+                    }
+>>>>>>> origin/0.14
                     // Netgroups for inbound and addnode peers are not excluded because our goal here
                     // is to not use multiple of our limited outbound slots on a single netgroup
                     // but inbound and addnode peers do not use our outbound slots.  Inbound peers
@@ -1839,12 +1948,22 @@ void CConnman::ThreadOpenConnections(const std::vector<std::string> connect)
             if (nANow - addr.nLastTry < 600 && nTries < 30)
                 continue;
 
+<<<<<<< HEAD
             // for non-feelers, require all the services we'll want,
             // for feelers, only require they be a full node (only because most
             // SPV clients don't have a good address DB available)
             if (!fFeeler && !HasAllDesirableServiceFlags(addr.nServices)) {
                 continue;
             } else if (fFeeler && !MayHaveUsefulAddressDB(addr.nServices)) {
+=======
+            // only consider nodes missing relevant services after 40 failed attempts and only if less than half the outbound are up.
+            ServiceFlags nRequiredServices = nRelevantServices;
+            if (nTries >= 40 && nOutbound < (nMaxOutbound >> 1)) {
+                nRequiredServices = REQUIRED_SERVICES;
+            }
+
+            if ((addr.nServices & nRequiredServices) != nRequiredServices) {
+>>>>>>> origin/0.14
                 continue;
             }
 
@@ -1853,6 +1972,13 @@ void CConnman::ThreadOpenConnections(const std::vector<std::string> connect)
                 continue;
 
             addrConnect = addr;
+
+            // regardless of the services assumed to be available, only require the minimum if half or more outbound have relevant services
+            if (nOutboundRelevant >= (nMaxOutbound >> 1)) {
+                addrConnect.nServices = REQUIRED_SERVICES;
+            } else {
+                addrConnect.nServices = nRequiredServices;
+            }
             break;
         }
 
@@ -2360,7 +2486,11 @@ void CConnman::Interrupt()
     InterruptSocks5(true);
 
     if (semOutbound) {
+<<<<<<< HEAD
         for (int i=0; i<m_max_outbound; i++) {
+=======
+        for (int i=0; i<(nMaxOutbound + nMaxFeeler); i++) {
+>>>>>>> origin/0.14
             semOutbound->post();
         }
     }

@@ -50,6 +50,7 @@
         <translation>Scegli l'indirizzo a cui inviare denaro</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Choose the address to receive coins with</source>
         <translation>Scegli l'indirizzo dove accreditare i coins</translation>
     </message>
@@ -97,10 +98,16 @@
         <source>Exporting Failed</source>
         <translation>Esportazione Fallita</translation>
     </message>
+=======
+        <source>C&amp;hoose</source>
+        <translation>Scegli</translation>
+    </message>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>AddressTableModel</name>
     <message>
+<<<<<<< HEAD
         <source>Label</source>
         <translation>Etichetta</translation>
     </message>
@@ -113,6 +120,12 @@
         <translation>(nessuna etichetta)</translation>
     </message>
 </context>
+=======
+        <source>Address</source>
+        <translation>Indirizzo</translation>
+    </message>
+    </context>
+>>>>>>> origin/0.14
 <context>
     <name>AskPassphraseDialog</name>
     <message>
@@ -878,6 +891,7 @@
         <source>Address</source>
         <translation>Indirizzo</translation>
     </message>
+<<<<<<< HEAD
     <message>
         <source>Amount</source>
         <translation>Importo</translation>
@@ -890,6 +904,8 @@
         <source>Wallet</source>
         <translation>Portafoglio</translation>
     </message>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>RecentRequestsTableModel</name>
@@ -1011,6 +1027,7 @@
 <context>
     <name>TransactionView</name>
     <message>
+<<<<<<< HEAD
         <source>Copy address</source>
         <translation>Copia indirizzo</translation>
     </message>
@@ -1050,6 +1067,11 @@
         <source>Exporting Failed</source>
         <translation>Esportazione Fallita</translation>
     </message>
+=======
+        <source>Address</source>
+        <translation>Indirizzo</translation>
+    </message>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>UnitDisplayStatusBarControl</name>
