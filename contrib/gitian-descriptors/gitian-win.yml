@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 name: "bitcoin-core-win-0.20"
+=======
+name: "bitcoin-win-0.14"
+>>>>>>> origin/0.14
 enable_cache: true
 distro: "ubuntu"
 suites:

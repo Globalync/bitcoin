@@ -46,11 +46,14 @@ for LINE in $GPG_RES; do
 		[ "$BITCOIN_VERIFY_COMMITS_ALLOW_REVSIG" != 1 ] && exit 1
 		REVSIG=true
 		GOODREVSIG="[GNUPG:] GOODSIG ${LINE#* * *}"
+<<<<<<< HEAD
 		;;
 	"[GNUPG:] EXPKEYSIG "*)
 		[ "$BITCOIN_VERIFY_COMMITS_ALLOW_REVSIG" != 1 ] && exit 1
 		REVSIG=true
 		GOODREVSIG="[GNUPG:] GOODSIG ${LINE#* * *}"
+=======
+>>>>>>> origin/0.14
 		;;
 	esac
 done

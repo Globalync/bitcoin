@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 name: "bitcoin-core-osx-0.20"
+=======
+name: "bitcoin-osx-0.14"
+>>>>>>> origin/0.14
 enable_cache: true
 distro: "ubuntu"
 suites:
