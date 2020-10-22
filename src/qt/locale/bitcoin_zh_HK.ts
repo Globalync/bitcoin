@@ -62,6 +62,13 @@
         <translation>收款地址</translation>
     </message>
     <message>
+<<<<<<< HEAD
+        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這些是你要付款過去的 Bitcoin 位址。在付款之前，務必要檢查金額和收款位址是否正確。</translation>
+    </message>
+    <message>
+=======
+>>>>>>> origin/0.14
         <source>&amp;Copy Address</source>
         <translation>複製地址 &amp;C</translation>
     </message>
@@ -148,10 +155,13 @@
         <translation>更改密碼</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
         <source>Enter the old passphrase and new passphrase to the wallet.</source>
         <translation>輸入舊密碼和新密碼至錢包。</translation>
     </message>
     <message>
+>>>>>>> origin/0.14
         <source>Confirm wallet encryption</source>
         <translation>確認錢包加密</translation>
     </message>
@@ -168,10 +178,13 @@
         <translation>錢包已加密</translation>
     </message>
     <message>
+<<<<<<< HEAD
+=======
         <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bitcoins from being stolen by malware infecting your computer.</source>
         <translation>%1 現在要關閉來完成加密程序。請記得將錢包加密不能完全防止你的 Bitcoins 經被入侵電腦的惡意程式偷取。</translation>
     </message>
     <message>
+>>>>>>> origin/0.14
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
         <translation>重要: 請改用新產生的加密錢包檔，來取代所以舊錢包檔的備份。為安全計，當你開始使用新的加密錢包檔後，舊錢包檔的備份就不能再使用了。</translation>
     </message>
@@ -234,10 +247,6 @@
         <translation>總覽 &amp;O</translation>
     </message>
     <message>
-        <source>Node</source>
-        <translation>節點</translation>
-    </message>
-    <message>
         <source>Show general overview of wallet</source>
         <translation>顯示錢包一般總覽</translation>
     </message>
@@ -294,14 +303,6 @@
         <translation>改變密碼... &amp;C</translation>
     </message>
     <message>
-        <source>&amp;Sending addresses...</source>
-        <translation>付款位址... &amp;S</translation>
-    </message>
-    <message>
-        <source>&amp;Receiving addresses...</source>
-        <translation>收款位址... &amp;R</translation>
-    </message>
-    <message>
         <source>Open &amp;URI...</source>
         <translation>開啓網址... &amp;U</translation>
     </message>
@@ -332,14 +333,6 @@
     <message>
         <source>&amp;Verify message...</source>
         <translation>驗證訊息... &amp;V</translation>
-    </message>
-    <message>
-        <source>Bitcoin</source>
-        <translation>Bitcoin</translation>
-    </message>
-    <message>
-        <source>Wallet</source>
-        <translation>錢包</translation>
     </message>
     <message>
         <source>&amp;Send</source>
@@ -402,6 +395,15 @@
         <source>(no label)</source>
         <translation>(無標記)</translation>
     </message>
+<<<<<<< HEAD
+    </context>
+<context>
+    <name>CreateWalletActivity</name>
+    </context>
+<context>
+    <name>CreateWalletDialog</name>
+=======
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>EditAddressDialog</name>
@@ -415,6 +417,13 @@
 <context>
     <name>Intro</name>
     <message>
+<<<<<<< HEAD
+        <source>Bitcoin</source>
+        <translation>Bitcoin</translation>
+    </message>
+    <message>
+=======
+>>>>>>> origin/0.14
         <source>Error</source>
         <translation>錯誤</translation>
     </message>
@@ -426,7 +435,14 @@
     <name>OpenURIDialog</name>
     </context>
 <context>
+    <name>OpenWalletActivity</name>
+    </context>
+<context>
     <name>OptionsDialog</name>
+    <message>
+        <source>Error</source>
+        <translation>錯誤</translation>
+    </message>
     </context>
 <context>
     <name>OverviewPage</name>
@@ -436,7 +452,15 @@
     </context>
 <context>
     <name>PeerTableModel</name>
-    </context>
+    <message>
+        <source>Sent</source>
+        <translation>已送出</translation>
+    </message>
+    <message>
+        <source>Received</source>
+        <translation>已接收</translation>
+    </message>
+</context>
 <context>
     <name>QObject</name>
     <message>
@@ -499,9 +523,12 @@
         <source>%n year(s)</source>
         <translation><numerusform>%n 年</numerusform></translation>
     </message>
+<<<<<<< HEAD
+=======
     </context>
 <context>
     <name>QObject::QObject</name>
+>>>>>>> origin/0.14
     </context>
 <context>
     <name>QRImageWidget</name>
@@ -558,7 +585,15 @@
         <source>Label</source>
         <translation>標記</translation>
     </message>
+<<<<<<< HEAD
+    <message>
+        <source>Wallet</source>
+        <translation>錢包</translation>
+    </message>
+</context>
+=======
     </context>
+>>>>>>> origin/0.14
 <context>
     <name>RecentRequestsTableModel</name>
     <message>
@@ -588,9 +623,6 @@
     </context>
 <context>
     <name>SignVerifyMessageDialog</name>
-    </context>
-<context>
-    <name>SplashScreen</name>
     </context>
 <context>
     <name>TrafficGraphWidget</name>
@@ -643,6 +675,9 @@
     <name>UnitDisplayStatusBarControl</name>
     </context>
 <context>
+    <name>WalletController</name>
+    </context>
+<context>
     <name>WalletFrame</name>
     </context>
 <context>
@@ -650,6 +685,14 @@
     </context>
 <context>
     <name>WalletView</name>
+    <message>
+        <source>&amp;Export</source>
+        <translation>匯出 &amp;E</translation>
+    </message>
+    <message>
+        <source>Export the data in the current tab to a file</source>
+        <translation>把目前分頁的資料匯出至檔案</translation>
+    </message>
     </context>
 <context>
     <name>bitcoin-core</name>
